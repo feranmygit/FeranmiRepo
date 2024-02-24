@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -15,27 +17,81 @@
   </style>
 </head>
 <body>
-  <i class="fas fa-star"></i>
+  <header class="mainHeader" id="sectionSpace">
+       <input type="checkbox" id="input" name="input">
+    <div class="headerContainer">
+      <label for="input" id="hambugger"></label>
+    </div>  
+    <div class="navContainer" id="navContainer">
+      <nav class="navBar" id="active">
+        <ul class="itemsList" id="itemsList">
+          <label for="input" class="remove"><img src="./images/icon-close.svg" alt="" id="close"></label>
+          <li class="items"><a href="index.html">Collections</li></a>
+          <li class="items"><a href="">Men</li></a>
+          <li class="items"><a href="">Women</li></a>
+          <li class="items"><a href="">About</li></a>
+          <li class="items"><a href="">Contact</li></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo"><img src="./images/logo.svg" alt=""></div>
+    <div class="cart"><img src="./images/icon-cart.svg" alt=""></div>
+    <div class="avatar"><img src="./images/image-avatar.png" alt=""></div>
+  </header>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <main class="mainContainer">
+    <section class="sectionOne">
+      <div class="sectionDiv_one" >
+          <div class="previous_icon" id="prev"><img src="./images/icon-previous.svg" alt=""></div>
+          <div class="next_icon" id="prev"><img src="./images/icon-next.svg" alt=""></div>
+      </div>
+    </section>
 
-  Sneaker Company
+    <section class="sectionTwo" id="sectionSpace">
+      <div class="sectionDiv_two">
+        <h4 class="newHead">SNEAKER COMPANY</h4>
+        <h3 class="newSneak">Fall Limited Edition Sneakers</h3>
+        <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="divIn">
+            <div><h2 class="head_2">$125.00</h2></div>
+            <div><h3 class="head_3">50%</h3></div>
+            <div id="srcN"><h3 class="head_next">$250.00</h3></div>
+          </div>
+          <div class="oneTime">
+            <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
+            <div><p class="srcN2">0</p></div>
+            <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
+          </div>
+          <div class="oneTimecode">
+            <div><img src="./images/icon-cart.svg" alt=""></div>
+            <div><h3 class="srcN4">Add to cart</h3></div></div>
+      </div>
+    </section>
 
-  Fall Limited Edition Sneakers
+  </main>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-  $125.00
-  50%
-  $250.00
+  
+<script src="./index.js"></script>
+  
+  
+  
+  
+  
 
-  0
-  Add to cart
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
