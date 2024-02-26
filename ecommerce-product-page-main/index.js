@@ -1,8 +1,5 @@
-const close = document.getElementById('close');
-const items = document.getElementById('itemsList');
 
-if (close) {
-    close.addEventListener('click', () => {
-        items.classList.remove('active')
-    })
+function changeBackground(Big) {
+    var backgroundImage = window.getComputedStyle(Big).backgroundImage;
+    element.style.backgroundImage = backgroundImage;
 }

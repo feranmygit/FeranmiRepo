@@ -104,12 +104,52 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.picContainer{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+.picOne{
+  background-image: url(./images/image-product-1.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.picTwo{
+  background-image: url(./images/image-product-2.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.picThree{
+  background-image: url(./images/image-product-3.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.picFour{
+  background-image: url(./images/image-product-4.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
 #prev{
     margin: 1rem;
     height: 35px;
     width: 35px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 100%;
+    border-color:1px solid hsl(0, 0%, 100%);
 }
 #prev img{
    width: 7px;
@@ -199,33 +239,147 @@ body{
     align-items: center;
     gap: 10px;
 }
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sectionOne{
+    width: 100%;
+  }
 @media only screen and (max-width:1440px) {
     .headerContainer {
       display: none;
-      margin-bottom: 4rem;
-      border-bottom: 1px solid hsl(220, 14%, 75%);
       }
-    .navContainer > .navBar > .itemsList {
+      .mainHeader{
+        display: flex;
+        gap: 0.5rem;
+        margin: 2.5rem 8rem;
+        border-bottom: 0.01px solid hsl(0, 0%, 91%);
+        padding-bottom: 2.5rem;
+      }
+    .navContainer> .navBar> .itemsList {
       display: flex;
       flex-direction: row;
       z-index: -1;
-      background-color: none;
+      position: absolute;
+      background-color: hsl(0, 0%, 100%);
       list-style: none;
-      font-size: 22px;
-      color: hsl(220, 14%, 75%);
+      font-size: 18px;
       left: 10rem;
-      margin: 1.2rem 1.2rem;
-      gap: 1rem;
+      margin: 2.5rem 8rem;
+      gap: 2rem;
     }
+    .navContainer> .navBar> .itemsList>li>a {
+     color: hsl(220, 14%, 75%);
+    }
+    .itemsList > li {
+      color: hsl(0, 0%, 91%);
+      }
     .remove {
        display: none;
+      }
+      .mainHeader .avatar > img {
+        height: 30px;
+        margin: 0;
+      }
+      .mainContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5rem;
+        padding-top: 3rem;
+      }
+      .sectionOne{
+        width: 25%;
+        margin: 0rem 0rem 0rem 12rem;
+      }
+      .sectionDiv_one{
+        border-radius: 15px;
+      }
+      .picContainer{
+        display: flex;
+      }
+      .previous_icon{
+        display: none;
+      }
+      .next_icon{
+        display: none;
+      }
+      .sectionTwo{
+        width: 35%;
+      }
+      .newSneak {
+        margin: 1rem 1.2rem 0px 1.2rem;
+        font-family: hsl(0, 0%, 0%);
+        font-size: 45px;
+        font-weight: 10000;
+        line-height: 2.7rem;
+        padding-bottom: 5px;
+      }
+      .divIn {
+        margin: 0rem 1.2rem 0rem 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      #srcN {
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
+        position: absolute;
+        margin: 2.5rem 0px;
+      }
+      .divIn > div:nth-child(2){
+        margin-right: 17rem;
+      }
+      .catContainer{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 0px;
+      }
+      .oneTime {
+        display: flex;
+        justify-content: space-between;
+        margin: 0rem 0.5rem 0px 1.2rem;
+        background-color: hsl(223, 64%, 98%);
+        border-radius: 10px;
+        padding: 0px 10px;
+        height: 50px;
+        gap: 20px;
+      }
+      .oneTimecode {
+        margin: 0rem 0px;
+        background-color: hsl(26, 100%, 55%);
+        border-radius: 10px;
+        padding: 0px 50px;
+        color: hsl(219, 9%, 45%);
+        display: flex;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 50px;
+      }
+      .oneTimecode > div:nth-child(1) > img:nth-child(1){
+       height: 15px;
+      }
+      .srcN4{
+        font-size: 15px;
+      }
+      .srcN3{
+        padding: 0px;
+        margin: 18px 23px;
       }
 }
 @media only screen and (max-width:600px) {
     .headerContainer {
       display: initial;
       border: none;
-      margin-bottom: 0px;
+      }
+      .mainHeader{
+        display: flex;
+        gap: 0.5rem;
+        margin: 1.2rem 1.2rem;
+        border-bottom: 0px;
+        padding-bottom: 0rem;
       }
     .navContainer>.navBar>.itemsList{
       height: 100vh;
@@ -239,13 +393,120 @@ body{
       margin: 0px;
       top: 0px;
       left: -300px;
+      gap: .5rem;
       z-index: 1;
       list-style: none;
       padding: 0px 0px 0px 20px;
       font-size: 22px;
       box-shadow: 0px 0px 0px rgb(5, 5, 5)
     }
+    .navContainer> .navBar> .itemsList>li>a {
+        color: hsl(0, 0%, 0%);
+       }
     .remove {
        display: initial;
       }
+      .mainHeader .avatar > img {
+        height: 22px;
+      }
+      .avatar {
+        margin-inline-end: 0.1rem;
+        margin-inline-start: 0px;
+      }
+      .sectionOne{
+        width: 100%;
+        margin: 0rem 0rem;
+      }
+      .mainContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0rem;
+        padding-top: 0rem
+      }
+      .sectionDiv_one{
+        border-radius: 0px;
+      }
+      .previous_icon{
+        display: initial;
+      }
+      .next_icon{
+        display: initial;
+      }
+      .sectionTwo{
+        width: 100%;
+      }
+      .newSneak {
+        margin: 1rem 1.2rem 0px 1.2rem;
+        font-family: hsl(0, 0%, 0%);
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 0px;
+        line-height: 2rem;
+      }
+      .divIn {
+        margin: 0rem 1.2rem 0rem 1.2rem;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+      }
+      #srcN {
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
+        position: relative;
+        float: right;
+        margin: 0rem 0px;
+      }
+      .divIn .head_next {
+        padding: 3px;
+        margin-inline-start: 6.5rem;
+        margin-inline-end:  2rem;
+        border-radius: 20%;
+        color: hsl(220, 14%, 75%);
+        font-weight: 600;
+        text-decoration: line-through;
+      }
+      .divIn > div:nth-child(2){
+        margin-right: 0rem;
+      }
+      .catContainer{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0px;
+      }
+      .oneTime {
+        display: flex;
+        justify-content: space-between;
+        margin: 0rem 1.2rem 0px 1.2rem;
+        background-color: hsl(223, 64%, 98%);
+        border-radius: 10px;
+        padding-top: 5px;
+      }
+      .oneTimecode {
+        margin: 1.2rem 1.2rem 1.2rem 1.2rem;
+        background-color: hsl(26, 100%, 55%);
+        border-radius: 10px;
+        padding: 3px 100px;
+        color: hsl(219, 9%, 45%);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+        border-color: 1px solid hsl(26, 100%, 55%);
+      }
+      .oneTimecode > div:nth-child(1) > img:nth-child(1){
+        height: 15px;
+       }
+       .srcN4{
+         font-size: 15px;
+       }
+       .srcN3{
+         padding: 0px;
+         margin: 19px;
+       }
+       .picContainer{
+        display: none;
+      }
 }
+

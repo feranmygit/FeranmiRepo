@@ -34,16 +34,22 @@
         </ul>
       </nav>
     </div>
-    <div class="logo"><img src="./images/logo.svg" alt=""></div>
-    <div class="cart"><img src="./images/icon-cart.svg" alt=""></div>
-    <div class="avatar"><img src="./images/image-avatar.png" alt=""></div>
+      <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      <div class="cart"><img src="./images/icon-cart.svg" alt=""></div>
+      <div class="avatar" id="Davatar"><img src="./images/image-avatar.png" alt=""></div>
   </header>
 
   <main class="mainContainer">
     <section class="sectionOne">
-      <div class="sectionDiv_one" >
+      <div class="sectionDiv_one" id="element">
           <div class="previous_icon" id="prev"><img src="./images/icon-previous.svg" alt=""></div>
           <div class="next_icon" id="prev"><img src="./images/icon-next.svg" alt=""></div>
+      </div>
+      <div class="picContainer" id="SmallImg">
+        <div class="picOne" onclick="changeBackground(element1)" id="element1"></div>
+        <div class="picTwo" onclick="changeBackground(element2)" id="element2"></div>
+        <div class="picThree" onclick="changeBackground(element3)" id="element3"></div>
+        <div class="picFour" onclick="changeBackground(element4)" id="element4"></div>
       </div>
     </section>
 
@@ -58,44 +64,32 @@
             <div><h3 class="head_3">50%</h3></div>
             <div id="srcN"><h3 class="head_next">$250.00</h3></div>
           </div>
-          <div class="oneTime">
-            <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
-            <div><p class="srcN2">0</p></div>
-            <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
+          <div class="catContainer">
+            <div class="oneTime">
+              <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
+              <div><p class="srcN2">0</p></div>
+              <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
+            </div>
+            <div class="oneTimecode">
+              <div><img src="./images/icon-cart.svg" alt=""></div>
+              <div><h3 class="srcN4">Add to cart</h3></div>
+            </div>
           </div>
-          <div class="oneTimecode">
-            <div><img src="./images/icon-cart.svg" alt=""></div>
-            <div><h3 class="srcN4">Add to cart</h3></div></div>
       </div>
     </section>
+      <div id="dib"></div>
+  </main><br><br>
 
-  </main>
 
-
-  
 <script src="./index.js"></script>
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-  
-
   
   
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Feranmi</a>.
   </div>
+  
+  </script>
 </body>
 </html>
