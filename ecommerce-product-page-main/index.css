@@ -30,6 +30,7 @@ body{
     height: 3px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 #hambugger::before{
     margin-top: -5px;
@@ -40,6 +41,7 @@ body{
     display: inline-block;
     content: "";
     position: absolute;
+    cursor: pointer;
 }
 #hambugger::after{
     margin-top: 5px;
@@ -50,11 +52,66 @@ body{
     display: inline-block;
     content: "";
     position: absolute;
+    cursor: pointer;
 }
 #input:checked ~ .navContainer>.navBar>.itemsList{
     left: 0px;
     transition: 0.05s;
     box-shadow: 200px 0px 350px rgb(5, 5, 5)
+}
+#open_cart{
+  display: none;
+}
+.productContents{
+padding: 10px;
+background-color: #fff;
+margin-bottom: 10px;
+}
+#cartLogo{
+  background-color: red;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+}
+.cartPreview{
+  position: absolute;
+  margin-top: 25px;
+  left: 0px;
+  background-color: #787777;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+}
+.cartPreview.show{
+  display: block;
+  top: 60px;
+}
+.cartPreview{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.cart-item{
+  display: none;
+}
+.cart-item.visible{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: aliceblue;
+  width: 100%;
+}
+#cartLogo:checked ~ .cartPreview{
+  display: block;
 }
 .navContainer>.navBar>.itemsList{
     height: 100vh;
@@ -77,6 +134,7 @@ body{
 .remove{
     margin-bottom: 40px;
     margin-top: 25px;
+    cursor: pointer;
 }
 .navContainer>.navBar>.itemsList>li{
    margin-bottom: 1.5rem;
@@ -94,6 +152,11 @@ body{
 .cart{
     margin-inline-end: 0.5rem;
     margin-inline-start: auto;
+    background-image: url(./images/icon-cart.svg);
+    height: 20px;
+    width: 22px;
+    background-size: cover;
+    position: relative;
 }
 .sectionDiv_one{
     background-image: url(./images/image-product-1.jpg);
@@ -114,33 +177,33 @@ body{
 #element1{
   background-image: url(./images/image-product-1.jpg);
   background-size: cover;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 15px;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 #element2{
   background-image: url(./images/image-product-2.jpg);
   background-size: cover;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 15px;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 #element3{
   background-image: url(./images/image-product-3.jpg);
   background-size: cover;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 15px;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 #element4{
   background-image: url(./images/image-product-4.jpg);
   background-size: cover;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 15px;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 #prev{
@@ -150,11 +213,12 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 100%;
     border-color:1px solid hsl(0, 0%, 100%);
+    border: none;
 }
 #prev img{
    width: 7px;
    height: 12px;
-   margin: 12.5px;
+   margin: 12px;
    cursor: pointer; 
 }
 .sectionTwo{
@@ -182,36 +246,7 @@ body{
     font-weight: 500;
     line-height: 25px;
 }
-.divIn{
-    margin: 0rem 1.2rem 0rem 1.2rem;
-    display: flex;
-    gap: 1rem;
- }
-.divIn .head_2{
-    font-weight: 600;
-    font-family: hsl(0, 0%, 0%);
-    font-size: 25px;
-}
-.divIn .head_3{
-    background-color: hsl(25, 100%, 94%);
-    padding: 3px 8px 0px 8px;
-    border-radius: 10%;
-    color: hsl(26, 100%, 55%);
-    font-weight: 600;
-    text-align: center;
-    font-family: hsl(0, 0%, 0%)
-}
-.divIn .head_next{
-    padding: 3px;
-    border-radius: 20%;
-    color: hsl(220, 14%, 75%);
-    font-weight: 600;
-    text-decoration: line-through;
-}
-#srcN{
-    margin-inline-start: auto;
-    margin-inline-end: 1rem;
-}
+
 .oneTime{
     display: flex;
     justify-content: space-between;
@@ -221,13 +256,16 @@ body{
     padding-top: 5px;
 }
 .srcN1{
-   margin: 23px;
+   margin: 21px;
+   cursor: pointer;
 }
 .srcN2{
    font-weight: 600;
+   cursor: pointer;
 }
 .srcN3{
- margin: 23px;
+ margin: 22px;
+ cursor: pointer;
 }
 .oneTimecode{
     margin: 1.2rem 1.2rem 1.2rem 1.2rem;
@@ -247,6 +285,34 @@ body{
   .sectionOne{
     width: 100%;
   }
+  .rateBox{
+    display: flex;
+    gap: 1rem;
+    margin: 1.2rem;
+  }
+  .rateBox #DisRate{
+    font-weight: 600;
+    font-family: hsl(0, 0%, 0%);
+    font-size: 25px;
+  }
+  .rateBox #offPer{
+    background-color: hsl(25, 100%, 94%);
+    padding: 3px 8px 3px 8px;
+    border-radius: 10%;
+    color: hsl(26, 100%, 55%);
+    font-weight: 600;
+    text-align: center;
+    margin-right: 5rem;
+    font-family: hsl(0, 0%, 0%)
+  }
+  .rateBox #realRate{
+    padding: 3px;
+    border-radius: 20%;
+    color: hsl(220, 14%, 75%);
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-inline-end: 1rem;
+  }
 @media only screen and (max-width:1440px) {
     .headerContainer {
       display: none;
@@ -254,25 +320,32 @@ body{
       .mainHeader{
         display: flex;
         gap: 0.5rem;
-        margin: 2.5rem 8rem;
+        margin: 2rem 8rem ;
         border-bottom: 0.01px solid hsl(0, 0%, 91%);
-        padding-bottom: 2.5rem;
+        padding-bottom: 1rem;
       }
     .navContainer> .navBar> .itemsList {
       display: flex;
       flex-direction: row;
-      z-index: -1;
+      height: 0px;
       position: absolute;
       background-color: hsl(0, 0%, 100%);
       list-style: none;
       font-size: 18px;
       left: 10rem;
-      margin: 2.5rem 8rem;
+      margin: 2rem 8rem;
       gap: 2rem;
+      z-index: 1;
     }
     .navContainer> .navBar> .itemsList>li>a {
      color: hsl(220, 14%, 75%);
+     cursor: pointer;
     }
+    .navContainer> .navBar> .itemsList>li>a:hover {
+      color:  hsl(0, 0%, 0%);
+      padding-bottom: 28px;
+      border-bottom: 2px solid hsl(26, 100%, 55%);
+    }    
     .itemsList > li {
       color: hsl(0, 0%, 91%);
       }
@@ -288,7 +361,7 @@ body{
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 5rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
       }
       .sectionOne{
         width: 25%;
@@ -296,6 +369,7 @@ body{
       }
       .sectionDiv_one{
         border-radius: 15px;
+        height: 350px;
       }
       .picContainer{
         display: flex;
@@ -308,6 +382,7 @@ body{
       }
       .sectionTwo{
         width: 35%;
+        margin-top: 2rem;
       }
       .newSneak {
         margin: 1rem 1.2rem 0px 1.2rem;
@@ -317,21 +392,7 @@ body{
         line-height: 2.7rem;
         padding-bottom: 5px;
       }
-      .divIn {
-        margin: 0rem 1.2rem 0rem 1.2rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      #srcN {
-        margin-inline-start: 0rem;
-        margin-inline-end: 0rem;
-        position: absolute;
-        margin: 2.5rem 0px;
-      }
-      .divIn > div:nth-child(2){
-        margin-right: 17rem;
-      }
+      
       .catContainer{
         display: flex;
         flex-direction: row;
@@ -342,15 +403,16 @@ body{
         justify-content: space-between;
         margin: 0rem 0.5rem 0px 1.2rem;
         background-color: hsl(223, 64%, 98%);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 0px 10px;
         height: 50px;
         gap: 20px;
+        border: none;
       }
       .oneTimecode {
         margin: 0rem 0px;
         background-color: hsl(26, 100%, 55%);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 0px 50px;
         color: hsl(219, 9%, 45%);
         display: flex;
@@ -358,6 +420,8 @@ body{
         align-items: center;
         gap: 10px;
         height: 50px;
+        border: none;
+        cursor: pointer;
       }
       .oneTimecode > div:nth-child(1) > img:nth-child(1){
        height: 15px;
@@ -369,7 +433,26 @@ body{
         padding: 0px;
         margin: 18px 23px;
       }
+      .picture:hover{
+        border: 2px solid hsl(26, 100%, 55%);
+        opacity: 0.5;
+       }
+      .rateBox{
+        gap: 1rem;
+      }
+     
+      .rateBox #offPer{
+        margin-right: 0rem;
+      }
+      .rateBox #realRate{
+        position: absolute;
+      }
+      .rate2{
+        position: absolute;
+        margin-top: 2.5rem;
+      }
 }
+
 @media only screen and (max-width:600px) {
     .headerContainer {
       display: initial;
@@ -403,6 +486,7 @@ body{
     }
     .navContainer> .navBar> .itemsList>li>a {
         color: hsl(0, 0%, 0%);
+        cursor: pointer;
        }
     .remove {
        display: initial;
@@ -427,6 +511,7 @@ body{
       }
       .sectionDiv_one{
         border-radius: 0px;
+        height: 400px;
       }
       .previous_icon{
         display: initial;
@@ -436,6 +521,8 @@ body{
       }
       .sectionTwo{
         width: 100%;
+        margin-top: 0rem;
+
       }
       .newSneak {
         margin: 1rem 1.2rem 0px 1.2rem;
@@ -445,31 +532,7 @@ body{
         padding-bottom: 0px;
         line-height: 2rem;
       }
-      .divIn {
-        margin: 0rem 1.2rem 0rem 1.2rem;
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 1rem;
-      }
-      #srcN {
-        margin-inline-start: 0rem;
-        margin-inline-end: 0rem;
-        position: relative;
-        float: right;
-        margin: 0rem 0px;
-      }
-      .divIn .head_next {
-        padding: 3px;
-        margin-inline-start: 6.5rem;
-        margin-inline-end:  2rem;
-        border-radius: 20%;
-        color: hsl(220, 14%, 75%);
-        font-weight: 600;
-        text-decoration: line-through;
-      }
-      .divIn > div:nth-child(2){
-        margin-right: 0rem;
-      }
+      
       .catContainer{
         display: flex;
         flex-direction: column;
@@ -480,13 +543,14 @@ body{
         justify-content: space-between;
         margin: 0rem 1.2rem 0px 1.2rem;
         background-color: hsl(223, 64%, 98%);
-        border-radius: 10px;
+        border-radius: 5px;
         padding-top: 5px;
+        border: none;
       }
       .oneTimecode {
         margin: 1.2rem 1.2rem 1.2rem 1.2rem;
         background-color: hsl(26, 100%, 55%);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 3px 100px;
         color: hsl(219, 9%, 45%);
         display: flex;
@@ -495,6 +559,7 @@ body{
         align-items: center;
         gap: 10px;
         border-color: 1px solid hsl(26, 100%, 55%);
+        border: none;
       }
       .oneTimecode > div:nth-child(1) > img:nth-child(1){
         height: 15px;
@@ -508,6 +573,12 @@ body{
        }
        .picContainer{
         display: none;
+      }
+      .rateBox #offPer{
+        margin-right: 6rem;
+      }
+      .rate2{
+        position: initial;
       }
 }
 

@@ -35,15 +35,16 @@
       </nav>
     </div>
       <div class="logo"><img src="./images/logo.svg" alt=""></div>
-      <div class="cart"><img src="./images/icon-cart.svg" alt=""></div>
-      <div class="avatar" id="Davatar"><img src="./images/image-avatar.png" alt=""></div>
+      <input type="checkbox" name="productContainer" id="open_cart">
+      <label for="productContainer" class="cart"><div id="cartLogo">0</div></label>
+      <div class="avatar" ><img  src="./images/image-avatar.png" alt=""></div>
   </header>
 
   <main class="mainContainer">
     <section class="sectionOne">
       <div class="sectionDiv_one" id="element">
-          <div class="previous_icon" id="prev"><img id="previous_icon" onclick="prevBackground(previous_icon)" src="./images/icon-previous.svg" alt=""></div>
-          <div class="next_icon" id="prev"><img id="next_icon" onclick="nextBackground(next_icon)" src="./images/icon-next.svg" alt=""></div>
+          <button class="previous_icon" id="prev"><img id="previous_icon" onclick="prevBackground(previous_icon)" src="./images/icon-previous.svg" alt=""></button>
+          <button class="next_icon" id="prev"><img id="next_icon" onclick="nextBackground(next_icon)" src="./images/icon-next.svg" alt=""></button>
       </div>
       <div class="picContainer" id="SmallImg">
         <div class="picture" onclick="changeBackground(element1)" id="element1"></div>
@@ -59,26 +60,35 @@
         <h3 class="newSneak">Fall Limited Edition Sneakers</h3>
         <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-          <div class="divIn">
-            <div><h2 class="head_2">$125.00</h2></div>
-            <div><h3 class="head_3">50%</h3></div>
-            <div id="srcN"><h3 class="head_next">$250.00</h3></div>
-          </div>
+         <div class="rateBox">
+          <div class="rate1"><h3 id="DisRate">$125.00</h3></div>
+          <div class="rate1"><h3 id="offPer">50%</h3></div>
+          <div class="rate2"><h3 id="realRate">$250.00</h3></div>
+         </div>
           <div class="catContainer">
-            <div class="oneTime">
+            <button class="oneTime">
               <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
               <div><p class="srcN2">0</p></div>
               <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
-            </div>
-            <div class="oneTimecode">
+            </button>
+            <button class="oneTimecode">
               <div><img src="./images/icon-cart.svg" alt=""></div>
               <div><h3 class="srcN4">Add to cart</h3></div>
-            </div>
+            </button>
           </div>
       </div>
     </section>
-      <div id="dib"></div>
+    
+
   </main><br><br>
+
+
+  <div id="cartContainer">
+    <div id="cartPreview" class="cartPreview"></div>
+  </div>
+  <div class="productContents" id="productContents"></div>
+
+
 
 
 <script src="./index.js"></script>
