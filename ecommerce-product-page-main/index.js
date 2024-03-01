@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var cartItems = JSON.parse(localStorage.getItem(cartItems)) || [];
     
-    function updateCartLogo(count) {
+    function updateCartLogo() {
         var numProducts = cartItems.length;
         cartLogo.textContent = numProducts;
         localStorage.setItem("cartItems", JSON.stringify(cartItems));

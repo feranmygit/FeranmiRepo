@@ -230,7 +230,7 @@ margin-bottom: 10px;
     font-family: hsl(0, 0%, 0%);
     font-size: 13px;
     letter-spacing: 1px;
-    margin: 1.2rem 1.2rem 0px 1.2rem;
+    margin: 0rem 1.2rem;
 }
 .newSneak{
     margin: 1rem 1.2rem 0px 1.2rem;
@@ -261,7 +261,6 @@ margin-bottom: 10px;
 }
 .srcN2{
    font-weight: 600;
-   cursor: pointer;
 }
 .srcN3{
  margin: 22px;
@@ -288,7 +287,7 @@ margin-bottom: 10px;
   .rateBox{
     display: flex;
     gap: 1rem;
-    margin: 1.2rem;
+    margin: 0rem 1.2rem;
   }
   .rateBox #DisRate{
     font-weight: 600;
