@@ -59,13 +59,21 @@ body{
     transition: 0.05s;
     box-shadow: 200px 0px 350px rgb(5, 5, 5)
 }
-#open_cart{
+#productContents{
   display: none;
 }
+#open_cart:checked + .productContents{
+  display: block;
+}
 .productContents{
-padding: 10px;
-background-color: #fff;
-margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    width: 30%;
+    border: 1px solid #c8c8c8;
+    height: auto;
+    border-radius: 5px;
+    display: none;
 }
 #cartLogo{
   background-color: red;
@@ -86,7 +94,7 @@ margin-bottom: 10px;
   position: absolute;
   margin-top: 25px;
   left: 0px;
-  background-color: #787777;
+  background-color: #f9f9f9;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: none;
@@ -95,10 +103,6 @@ margin-bottom: 10px;
   display: block;
   top: 60px;
 }
-.cartPreview{
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
 .cart-item{
   display: none;
 }
@@ -106,7 +110,7 @@ margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   background-color: aliceblue;
   width: 100%;
 }
@@ -246,7 +250,6 @@ margin-bottom: 10px;
     font-weight: 500;
     line-height: 25px;
 }
-
 .oneTime{
     display: flex;
     justify-content: space-between;
@@ -276,6 +279,11 @@ margin-bottom: 10px;
     align-content: center;
     align-items: center;
     gap: 10px;
+}
+.oneTimecode:hover{
+  color: hsl(25, 100%, 94%);
+  opacity: 0.8;
+  transition: 0.1s;
 }
 .mainContainer{
     display: flex;
@@ -579,5 +587,11 @@ margin-bottom: 10px;
       .rate2{
         position: initial;
       }
+      .newHead {
+        margin: 1.2rem 1.2rem;
+      }
+      .rate2 {
+        position: initial;
+        margin-top: 0;
+      }
 }
-
