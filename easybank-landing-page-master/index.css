@@ -4,11 +4,22 @@
 }
 body{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#classic{
+    padding: 1.2rem 2rem;
 }
 .headerContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
 }
 #input{
     display: none;
@@ -52,12 +63,172 @@ body{
 #input:checked ~ .navContainer{
     display: block;
 }
+#input:checked ~ .hambugger{
+    display: none;
+}
 .navContainer .navList .ulList{
-    height: 100px;
-    width: 300rem;
-    top: 0;
-    right:-300px;
+    height: 225px;
+    width: 85%;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    right: 0rem;
+    background-color: hsl(0, 0%, 100%);
+    margin: 2rem 2rem 0rem 0rem;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    padding: 20px 0 0 0px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 10px 158px 10px 170px rgba(0, 0, 0, 0.1)
+}
+.navContainer .navList .ulList>.items{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navContainer .navList .ulList>.items> a{
+    text-decoration: none;
+    color: black;
+}
+#btn{
+   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+   border-radius: 20px;
+   border: none;
+   font-size: 15px;
+   padding: 12px 30px;
+   color: hsl(0, 0%, 100%);
+   font-weight: 600;
+   cursor: pointer;
+}
+#btn:hover{
+    opacity: 0.8;
+}
+button.items:nth-child(6){
+    display: none;
+}
+.mainContainer .image-mockups{
     background-color: hsl(0, 0%, 98%);
-    margin: 3rem 10rem;
-    z-index: 99;
+    background-image: url(./images/bg-intro-mobile.svg);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+    height: 25%;
+}
+.section_two{
+    margin-top: 14rem;
+}
+.headOne{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.paraOne{
+    color: hsl(233, 8%, 62%);
+    line-height: 25px;
+}
+.btnContainer{
+    text-align: center;
+}
+.sectionDivtwo{
+    margin-top: 4rem;
+    background-color: hsl(220, 16%, 96%);
+}
+.blogTopic{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: hsl(233, 26%, 24%);
+    padding-top: 1.5rem;
+}
+#blogPar{
+    text-align: center;
+}
+.online{
+    color:hsl(233, 8%, 62%);
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+.imgHeader{
+   margin-bottom: 0px;
+}
+.articleContainer{
+    color: hsl(233, 26%, 24%);
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.blogpostImg .blogImg{
+    width: 100%;
+    height: 12rem;
+    border-radius: 5px;
+}
+.blogPostHeader6{
+    margin: 0px;
+    color:hsl(233, 8%, 62%);
+    font-size: 0.6rem;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+.blogPostHeader3{
+    color: hsl(233, 26%, 24%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#blogArtPar{
+    font-size: 13px;
+    color:  hsl(233, 8%, 62%);
+    margin: 0;
+    font: 300;
+}
+#blogSpace{
+    margin-top: 3rem;
+}
+.blogPost1{
+    background-color: hsl(0, 0%, 100%);
+}
+.section_Three{
+    background-color: hsl(0, 0%, 98%);
+}
+.sectionFour{
+    background-color: hsl(233, 26%, 24%);
+}
+.sectionFour{
+    text-align: center;
+}
+.footerLogo> img{
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.footerSocialMedias{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.footerSocialMedias .facebook{
+    cursor: pointer;
+}
+.aboutUs{
+    color: hsl(0, 0%, 98%);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.copyright{
+    margin-top: 2rem;
+}
+#cright{
+    margin: 2rem 0px;
+    color: hsl(233, 8%, 62%);
 }

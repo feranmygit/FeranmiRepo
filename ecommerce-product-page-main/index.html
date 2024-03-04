@@ -17,89 +17,92 @@
   </style>
 </head>
 <body>
-  <header class="mainHeader" id="sectionSpace">
-       <input type="checkbox" id="input" name="input">
-    <div class="headerContainer">
-      <label for="input" id="hambugger"></label>
-    </div>  
-    <div class="navContainer" id="navContainer">
-      <nav class="navBar" id="active">
-        <ul class="itemsList" id="itemsList">
-          <label for="input" class="remove"><img src="./images/icon-close.svg" alt="" id="close"></label>
-          <li class="items"><a href="index.html">Collections</li></a>
-          <li class="items"><a href="">Men</li></a>
-          <li class="items"><a href="">Women</li></a>
-          <li class="items"><a href="">About</li></a>
-          <li class="items"><a href="">Contact</li></a>
-        </ul>
-      </nav>
-      <input type="checkbox" name="productContents" id="productContents">
-    </div>
-      <div class="logo"><img src="./images/logo.svg" alt=""></div>
-      <label for="productContents" class="cart"><div id="cartLogo">0</div></label>
-      <div class="avatar" ><img  src="./images/image-avatar.png" alt=""></div>
-      <div class="productContents" id="productContents">cart</div>
-  </header>
+  <section class="all">
+    <header class="mainHeader" id="sectionSpace">
+      <input type="checkbox" id="input" name="input">
+   <div class="headerContainer">
+     <label for="input" id="hambugger"></label>
+   </div>  
+   <div class="navContainer" id="navContainer">
+     <nav class="navBar" id="active">
+       <ul class="itemsList" id="itemsList">
+         <label for="input" class="remove"><img src="./images/icon-close.svg" alt="" id="close"></label>
+         <li class="items"><a href="index.html">Collections</li></a>
+         <li class="items"><a href="">Men</li></a>
+         <li class="items"><a href="">Women</li></a>
+         <li class="items"><a href="">About</li></a>
+         <li class="items"><a href="">Contact</li></a>
+       </ul>
+     </nav>
+     <input type="checkbox" name="productContents" id="productContents">
+   </div>
+     <div class="logo"><img src="./images/logo.svg" alt=""></div>
+     <label for="productContents" class="cart"><div id="cartLogo">0</div></label>
+     <div class="avatar" ><img  src="./images/image-avatar.png" alt=""></div>
+     <div class="productContents" id="productContents">cart</div>
+ </header>
 
-  <main class="mainContainer">
-    <section class="sectionOne">
-      <div class="sectionDiv_one" id="element">
-          <button class="previous_icon" id="prev"><img id="previous_icon" onclick="prevBackground(previous_icon)" src="./images/icon-previous.svg" alt=""></button>
-          <button class="next_icon" id="prev"><img id="next_icon" onclick="nextBackground(next_icon)" src="./images/icon-next.svg" alt=""></button>
-      </div>
-      <div class="picContainer" id="SmallImg">
-        <div class="picture" onclick="changeBackground(element1)" id="element1"></div>
-        <div class="picture" onclick="changeBackground(element2)" id="element2"></div>
-        <div class="picture" onclick="changeBackground(element3)" id="element3"></div>
-        <div class="picture" onclick="changeBackground(element4)" id="element4"></div>
-      </div>
-    </section>
+ <main class="mainContainer">
+   <section class="sectionOne">
+     <div class="sectionDiv_one" id="element">
+         <button class="previous_icon" id="prev"><img id="previous_icon" onclick="prevBackground(previous_icon)" src="./images/icon-previous.svg" alt=""></button>
+         <button class="next_icon" id="prev"><img id="next_icon" onclick="nextBackground(next_icon)" src="./images/icon-next.svg" alt=""></button>
+     </div>
+     <div class="picContainer" id="SmallImg">
+       <div class="picture" onclick="changeBackground(element1)" id="element1"></div>
+       <div class="picture" onclick="changeBackground(element2)" id="element2"></div>
+       <div class="picture" onclick="changeBackground(element3)" id="element3"></div>
+       <div class="picture" onclick="changeBackground(element4)" id="element4"></div>
+     </div>
+   </section>
 
-    <section class="sectionTwo" id="sectionSpace">
-      <div class="sectionDiv_two">
-        <h4 class="newHead">SNEAKER COMPANY</h4>
-        <h3 class="newSneak">Fall Limited Edition Sneakers</h3>
-        <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-         <div class="rateBox">
-          <div class="rate1"><h3 id="DisRate">$125.00</h3></div>
-          <div class="rate1"><h3 id="offPer">50%</h3></div>
-          <div class="rate2"><h3 id="realRate">$250.00</h3></div>
+   <section class="sectionTwo" id="sectionSpace">
+     <div class="sectionDiv_two">
+       <h4 class="newHead">SNEAKER COMPANY</h4>
+       <h3 class="newSneak">Fall Limited Edition Sneakers</h3>
+       <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="rateBox">
+         <div class="rate1"><h3 id="DisRate">$125.00</h3></div>
+         <div class="rate1"><h3 id="offPer">50%</h3></div>
+         <div class="rate2"><h3 id="realRate">$250.00</h3></div>
+        </div>
+         <div class="catContainer">
+           <button class="oneTime">
+             <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
+             <div><p class="srcN2">0</p></div>
+             <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
+           </button>
+           <button class="oneTimecode">
+             <div><img src="./images/icon-cart.svg" alt=""></div>
+             <div><h3 class="srcN4">Add to cart</h3></div>
+           </button>
          </div>
-          <div class="catContainer">
-            <button class="oneTime">
-              <div><img src="./images/icon-minus.svg" alt="" class="srcN1"></div>
-              <div><p class="srcN2">0</p></div>
-              <div><img src="./images/icon-plus.svg" alt="" class="srcN3"></div>
-            </button>
-            <button class="oneTimecode">
-              <div><img src="./images/icon-cart.svg" alt=""></div>
-              <div><h3 class="srcN4">Add to cart</h3></div>
-            </button>
-          </div>
-      </div>
-    </section>
-    
+     </div>
+   </section>
+   
 
-  </main><br><br>
+ </main><br><br>
 
 
-  <div id="cartContainer">
-    <div id="cartPreview" class="cartPreview"></div>
-  </div>
+ <div id="cartContainer">
+   <div id="cartPreview" class="cartPreview"></div>
+ </div>
 
 
 
 
 <script src="./index.js"></script>
-  
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Feranmi</a>.
-  </div>
-  
-  </script>
+ 
+ 
+ 
+ <div class="attribution">
+   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+   Coded by <a href="#">Feranmi</a>.
+ </div>
+ 
+ </script>
+</section>
+ 
 </body>
 </html>
