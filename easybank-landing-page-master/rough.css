@@ -1,0 +1,60 @@
+.setion_one{
+    position: relative;
+    height: 100vh;
+}
+  .mainContainer .imgContainer{
+    background-color: hsl(0, 0%, 98%);
+    background-position-x: left;
+    background-position-y: center;
+    background-size: cover;
+    width: 40%;
+    position: absolute;
+    z-index: -5;
+    top: 20px;
+    left: 40rem;
+    height: 50%;
+}
+.imgContainer .image-mockups{
+    position: absolute;
+    top: 0px;
+    left: 10rem;
+    height: 100%;
+    right: 0px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.setion_one .image-mockups{
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position-x: left;
+    background-size: cover;
+    width: 38%;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: 62%;
+    height: 100vh;
+}
+.setion_one .image-mockups{
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(./images/bg-intro-mobile.svg);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+    height: 25%;
+}
+
+
+<div class="dropdown">
+      <button class="buttonMode" type="button" data-bs-toggle="dropdowns" aria-expanded="false">Dropdown</button>
+      <ul class="dropped_down_menu">
+        <li><button class="dropped_items" type="button">Dropdown 1</button></li>
+        <li><button class="dropped_items" type="button">Dropdown 2</button></li>
+        <li><button class="dropped_items" type="button">Dropdown 3</button></li>
+        <li><button class="dropped_items" type="button">Dropdown 4</button></li>
+        <li><button class="dropped_items" type="button">Dropdown 5</button></li>
+      </ul>
+    </div>

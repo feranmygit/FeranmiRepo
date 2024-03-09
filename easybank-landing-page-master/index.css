@@ -91,35 +91,27 @@ body{
 .navContainer .navList .ulList>.items> a{
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 }
 #btn{
    background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-   border-radius: 20px;
+   border-radius: 30px;
    border: none;
    font-size: 15px;
-   padding: 12px 30px;
+   padding: 15px 30px;
    color: hsl(0, 0%, 100%);
    font-weight: 600;
    cursor: pointer;
 }
 #btn:hover{
-    opacity: 0.8;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 button.items:nth-child(6){
     display: none;
 }
-.mainContainer .image-mockups{
-    background-color: hsl(0, 0%, 98%);
-    background-image: url(./images/bg-intro-mobile.svg);
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: -40px;
-    left: 0;
-    height: 25%;
-}
 .section_two{
-    margin-top: 14rem;
+    margin-top: 0rem;
 }
 .headOne{
     font-size: 2.5rem;
@@ -155,7 +147,6 @@ button.items:nth-child(6){
     color:hsl(233, 8%, 62%);
     font-size: 1.2rem;
     font-weight: 400;
-
 }
 .imgHeader{
    margin-bottom: 0px;
@@ -198,15 +189,21 @@ button.items:nth-child(6){
 .blogPost1{
     background-color: hsl(0, 0%, 100%);
 }
+.blogPostHeader3>a{
+  text-decoration: none;
+  color: hsl(233, 26%, 24%);
+  transition: 0.3s;
+}
+.blogPostHeader3>a:hover{
+  color: hsl(136, 65%, 51%);
+}
 .section_Three{
     background-color: hsl(0, 0%, 98%);
 }
 .sectionFour{
     background-color: hsl(233, 26%, 24%);
 }
-.sectionFour{
-    text-align: center;
-}
+
 .footerLogo> img{
     margin: 1.5rem;
     cursor: pointer;
@@ -221,9 +218,17 @@ button.items:nth-child(6){
     cursor: pointer;
 }
 .aboutUs{
-    color: hsl(0, 0%, 98%);
+    color: hsl(233, 8%, 62%);
     margin-bottom: 1rem;
     cursor: pointer;
+}
+.aboutUs>a{
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  transition: 0.3s;
+}
+.aboutUs>a:hover{
+  color: hsl(136, 65%, 51%);
 }
 .copyright{
     margin-top: 2rem;
@@ -231,4 +236,373 @@ button.items:nth-child(6){
 #cright{
     margin: 2rem 0px;
     color: hsl(233, 8%, 62%);
+}
+.itembtn{
+    display: none;
+}
+.setion_one{
+    position: relative;
+    top: -5rem;
+    left: 0rem;
+    height: 100vh;
+    width: 100%;
+    z-index: -3;
+    overflow: hidden;
+}
+.imgContainer{
+    position: absolute;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 80%;
+    left: 55%;
+    top: 0px;
+    z-index: -2;
+}
+.image-mockups{
+    position: absolute;
+    top: 0px;
+    right: -5%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    #classic {
+        padding: 1.2rem 10rem;
+    }
+    .headerContainer{
+          position: sticky;
+          top: 0;
+          z-index: 10000;
+      }
+      #hambuggerContainer {
+        display: none;
+      }
+      .navContainer {
+        display: block;
+        justify-content: center;
+      }
+      .navContainer .navList .ulList {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        height: 0px;
+        width: 0px;
+        right: 0rem;
+        box-shadow: none;
+        gap: 2rem;
+        margin: 1.8rem 0rem 0rem 0rem;
+        width: 100%;
+        padding: 0px;
+      }
+      .itembtn{
+        display: initial;
+    }
+      .imgLogo{
+        padding-top: .8rem;
+      }
+      .navContainer .navList .ulList > .items {
+        padding-top: 2rem;
+    }
+    .navContainer .navList .ulList > .items > a {
+        color: hsl(233, 8%, 62%);
+      }
+    .navContainer .navList .ulList > .items > a:hover {
+        border-bottom: 2px solid hsl(136, 65%, 51%);
+        padding-bottom: 2.3rem;
+        color: black;
+      }
+      #hide{
+        z-index: 10;
+        margin-top: 3rem;
+      }
+      .headerContainer{
+        z-index: 1000;
+      }
+     .upSect{
+        height: 0rem;
+      }
+      .setion_one{
+        position: relative;
+        top: -6rem;
+        left: 0rem;
+        height: 100vh;
+        width: 100%;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .section_two{
+        z-index: -3;
+        position: relative;
+    }
+    .imgContainer{
+        position: absolute;
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        width: 70%;
+        height: 85%;
+        left: 53%;
+        top: 0px;
+        z-index: -1;
+    }
+    .image-mockups{
+        position: absolute;
+        top: 0px;
+        right: -5%;
+        height: 102%;
+        z-index: 1;
+    }
+    .sectionDivOne{
+        width: 50%;
+    }
+    .headOne {
+        text-align: start;
+      }
+      .btnContainer {
+        text-align: start;
+      }
+      .headOne{
+        width: 50%;
+      }
+      .sectionDivOne > p:nth-child(2){
+        width: 60%;
+      }
+      .blogTopic {
+        text-align: start;
+    }
+    #blogd{
+        width: 60%;
+    }
+    #blogPar {
+        text-align: start;
+        width: 100%;
+      }
+      .div2{
+        display: flex;
+        flex-direction: row;
+        gap: 1.8rem;
+        padding: 1.2rem 10rem 1.2rem 10rem;
+      }
+      #blogPar >img {
+        height: 50px;
+      }
+      .articleBlogPost{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        width: 100%
+      }
+      .blogPost1 {
+        width: 14.3rem;
+      }
+      #blogSpace{
+        margin-top: 0;
+      }
+      #classPost{
+        margin: 1.2rem;
+      }
+      .sectionFour{
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+      }
+      .footerLogo{
+        margin-bottom: 1.5rem;
+      }
+      .internalLinks{
+        margin-top: 2rem;
+      }
+      .copyright{
+        padding-left: 11rem;
+      }
+      div.bttn:nth-child(1){
+        text-align: end;
+      }
+    #cright{
+      text-align: start;
+    }
+    .bttn{
+      margin-top: 4rem;
+    }
+    .btt{
+      text-align: end;
+    }
+    #removeContainer{
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+     #classic {
+        padding: 1.2rem 2rem;
+      }
+      .headerContainer{
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background-color: white;
+    }
+      #hambuggerContainer {
+        display: initial;
+      }
+      .navContainer {
+        display: none;
+    }
+    .itembtn{
+        display: none;
+    }
+       .navContainer .navList .ulList{
+        height: 225px;
+        width: 85%;
+        top: 40px;
+        display: flex;
+        flex-direction: column;
+        right: 0rem;
+        margin: 2rem 2rem 0rem 0rem;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        padding: 35px 0 0 0px;
+        gap: 0.6rem;
+        padding-top: 30px;
+        box-shadow: 10px 158px 10px 170px rgba(0, 0, 0, 0.1)
+    }
+     .imgLogo{
+        padding-top: 0rem;
+      }
+      .navContainer .navList .ulList > .items {
+        padding-top: 0rem;
+    }
+     .navContainer .navList .ulList > .items > a {
+      color: black;
+    }
+    .navContainer .navList .ulList > .items > a:hover {
+        border-bottom: none;
+        padding-bottom: 0rem;
+      }
+      .upSect{
+        height: 17rem;
+      }
+      .setion_one{
+        position: relative;
+        top: -7.2rem;
+        left: 0rem;
+        height: 27vh;
+        width: 100%;
+        z-index: -3;
+        overflow: hidden;
+    }
+    .imgContainer{
+        position: absolute;
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 125%;
+        left: 0%;
+        top: 0px;
+        z-index: -2;
+    }
+    .image-mockups{
+        position: absolute;
+        background-size: cover;
+        top: 0px;
+        right: 6%;
+        height: 105%;
+    }
+    .sectionDivOne{
+        width: initial;
+    }
+    .headOne {
+        text-align: center;
+      }
+      .btnContainer {
+        text-align: initial;
+      }
+      .headOne{
+        width: initial;
+      }
+      .sectionDivOne > p:nth-child(2){
+        width: initial;
+      }
+      .bttn{
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blogTopic {
+        text-align: center;
+    }
+    #blogPar {
+        text-align: center;
+      }
+      .blogTopic {
+        text-align: center;
+    }
+    #blogd{
+        width: 100%;
+    }
+    #blogPar {
+        text-align: center;
+        width: initial;
+      }
+      .div2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: initial;
+        padding: 1.2rem;
+      }
+      #blogPar >img {
+        height: initial;
+      }
+      .articleBlogPost{
+        flex-direction: column;
+        gap: 0rem;
+        width: 100%
+      }
+      .blogPost1 {
+        width: 100%;
+      }
+      #blogSpace{
+        margin-top: 0;
+      }
+      #classPost{
+        margin: 1.2rem;
+      }
+      .sectionFour{
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+      }
+      .footerLogo{
+        margin-bottom: 0;
+        text-align: center;
+      }
+      .internalLinks{
+        margin-top: 0;
+        text-align: center;
+      }
+      .copyright{
+        padding-left: 0;
+        margin-top: 0rem;
+      }
+      div.bttn:nth-child(1){
+        text-align: center;
+      }
+    #cright{
+      text-align: center;
+    }
+    .btt{
+      text-align: center;
+    }
+    #hambuggerContainer{
+      position: fixed;
+      top: 1.5rem;
+      right: 2rem;
+    }
 }
