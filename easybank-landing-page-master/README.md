@@ -81,7 +81,7 @@ i'd love to continue the mobile first approach to building webpages,it is faster
 
 - [Example resource 1]- This helped to correctly traverse through HTML elemwents using CSS and JavaScript.
 
-## Author
+## Author 
 
 - git - [feranmygit](https://github.com/feranmygit)
 - Frontend Mentor - [@feranmygit](https://www.frontendmentor.io/feranmygit)
