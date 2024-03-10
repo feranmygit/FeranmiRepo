@@ -10,5 +10,4 @@ function toggleMenu() {
         hambugger.style.display = 'none';
         removeContainer.style.display = 'block';
     }
-
 }

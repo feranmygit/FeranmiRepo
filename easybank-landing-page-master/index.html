@@ -22,13 +22,13 @@
       <div class="logoContainer"><img src="./images/logo.svg" alt="" class="imgLogo"></div>
       <input type="checkbox" name="input" id="input">
       <label for="input" id="hambuggerContainer">
-        <div class="hambugger" onclick="toggleMenu()"></div>
+        <div class="hambugger" id="hambuger" onclick="toggleMenu()"></div>
         <div id="removeContainer" onclick="toggleMenu()"><img class="remove" src="./images/icon-close.svg" alt=""></div>
       </label>
 
-      <div class="navContainer">
+      <div class="navContainer" >
         <nav class="navList">
-          <ul class="ulList">
+          <ul class="ulList" id="navContainer">
             <li class="items" ><a id="fitems" href="">Home</li></a>
             <li class="items"><a href="">About</li></a>
             <li class="items"><a href="">Contact</li></a>
