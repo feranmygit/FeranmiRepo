@@ -216,8 +216,6 @@ body{
       .mainheader {
         margin: 1.2rem 0 2.5rem 0;
       }
-      .image{
-      }
      .hambuger{
         display: none;
      }
@@ -225,7 +223,6 @@ body{
         height: 0;
         z-index: 0;
         position: absolute;
-        width: 100%;
         padding: 1rem;
         flex-direction: row;
         gap: 3rem;
@@ -233,6 +230,10 @@ body{
         top: 4rem;
         margin: 0;
         right: 0rem;
+        background-color: white;
+
+      }
+      body > header > nav > ul{
       }
       .resize{
         display: none;

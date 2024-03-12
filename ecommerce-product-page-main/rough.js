@@ -83,7 +83,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+I am proud to be able to make use of CSS grid style, it is one of the major skill require as a frontend developer, as it enable smooth and easy website design for larger screen sizes. I'm hoping to design a dashboard where the users can toggle ON and OFF button to change themes.
 
+During the process, it wasn't easy at first using CSS grid layout because, I made some try and error while I was coding but I finally navigate my way through to solve the problem.
+
+What do you suggest I should focus on designing first, mobile or desktop design? and if I want to design for a social dashboard which users can toggle ON and OFF the theme, should I create a separate two CSS file for each design theme?
 
 
 
