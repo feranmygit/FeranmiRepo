@@ -119,22 +119,31 @@ body{
   padding: 1rem 0rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
+<<<<<<< HEAD
   cursor: pointer;
 }
 .overviewCont{
   z-index: 1;
   position: relative;
+=======
+>>>>>>> b6e7a8012d5aa565b7a1381b5dc1d9468ccd3e36
 }
 #mediaIdContainer{
   border-top: 4px solid hsl(208, 92%, 53%);
 }
 #mediaIdContainer1{
+<<<<<<< HEAD
   border-top: 4px solid;
   border-color: hsl(329, 70%, 58%);
 }
 #mediaIdContainer2{
   border-top: 4px solid;
   border-color: hsl(348, 97%, 39%);
+=======
+  border-top-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+>>>>>>> b6e7a8012d5aa565b7a1381b5dc1d9468ccd3e36
 }
 .userPage1{
   display: flex;
@@ -336,6 +345,6 @@ body{
   margin: auto 1.5rem;
 }
 .overviewLine{
-  margin: rem;
+  margin: 0rem;
 }
 }
