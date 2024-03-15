@@ -45,6 +45,9 @@ body{
 #generalSpacing{
   padding: 2.5rem 1.5rem;
 }
+.mainContent{
+  height: auto;
+}
 .socialHeaderContainer{
   display: flex;
   flex-direction: column;
@@ -55,7 +58,7 @@ body{
   border-bottom-right-radius: 30px;
 }
 .socialHeaderElement1{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid hsl(228, 12%, 44%);
   width: 100%;
 }
 .socialElement1{
@@ -90,17 +93,18 @@ body{
   height: 1.2rem;
   width: 1.2rem;
   margin: 3.5px;
+  left: 26px;
   border-radius: 50px;
-  background-color: hsl(228, 12%, 44%);
+  background-color:  hsl(227, 47%, 96%);
 }
-.toggleBtn::after{
+.toggleBtn::before{
   position: absolute;
   content: "";
   height: 1.2rem;
   width: 1.2rem;
-  left: 26px;
+  left: -26px;
   border-radius: 50px;
-  background-color: hsl(227, 47%, 96%);
+  background-color: hsl(228, 12%, 44%);
 }
 .contentSectionOne{
   top: -3rem;
@@ -114,11 +118,23 @@ body{
   background-color: hsl(227, 47%, 96%);
   padding: 1rem 0rem;
   margin-bottom: 1.5rem;
-  border-radius: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
+.overviewCont{
+  z-index: 1;
+  position: relative;
+}
 #mediaIdContainer{
   border-top: 4px solid hsl(208, 92%, 53%);
+}
+#mediaIdContainer1{
+  border-top: 4px solid;
+  border-color: hsl(329, 70%, 58%);
+}
+#mediaIdContainer2{
+  border-top: 4px solid;
+  border-color: hsl(348, 97%, 39%);
 }
 .userPage1{
   display: flex;
@@ -137,16 +153,189 @@ body{
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 13px;
-  padding-left: 7px;
 }
 .dailyEffects{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.2rem;
   text-align: center;
   margin: 1rem 0 0.5rem 0;
-  color: hsl(163, 72%, 41%);
   font-weight: 700;
+}
+#effectPage{
+  color: hsl(163, 72%, 41%);
+}
+#effectPage1{
+  color: hsl(356, 69%, 56%);
+}
+.overViewParagrah{
+  font-size: 1.6rem;
+  margin: auto 1.5rem;
+  font-weight: 700;
+}
+.viewsContainer{
+  top: 0rem;
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  margin: auto 1.5rem;
+  right: 0;
+  left: 0;
+  background-color: hsl(227, 47%, 96%);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.viewsAccount{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#viewPort{
+  gap: 0.2rem;
+}
+.numberView{
+  font-size: 2rem;
+}
+.downArrowSymbol{
+  margin-bottom: 0.3rem;
+}
+#views{
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 1440px) {
+  #generalSpacing{
+    padding: 4rem 8rem;
+  }
+.socialElement1 {
+  font-size: 2rem;
+}
+.socialHeaderElement1 {
+  border-bottom: none;
+}
+.socialHeaderContainer{
+  flex-direction: row;
+}
+.socialHeaderElement2 {
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.toggleContainer:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.toggleBtn::before{
+  display: none;
+}
+.contentSectionOne {
+  top: -3rem;
+  text-align: center;
+  width: 15.48rem;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+.mainContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0rem 8rem;
+  gap: 2rem;
+  height: 15rem;
+}
+.overviewCont{
+  margin: 0rem  7.5rem;
+  max-width: 100%;
+  position: relative;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0rem 0rem;
+  gap: 2rem;
+}
+.viewsContainer{
+  margin: auto;
+  width: 12.5rem;
+}
+.overViewParagrah {
+  margin: auto;
+}
+}
+
+@media only screen and (max-width: 1342px) {
+  .overviewCont{
+    margin: 18rem  7.5rem;
+  }
+  .overviewLine{
+    margin: 0 1rem;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+  #generalSpacing{
+    padding: 2.5rem 1.5rem;
+  }
+.socialElement1 {
+  font-size: initial;
+}
+.socialHeaderElement1 {
+  border-bottom: 1px solid hsl(228, 12%, 44%);
+}
+.socialHeaderContainer{
+  flex-direction: column;
+}
+.socialHeaderElement2 {
+  justify-content: space-between;
+  gap: 0rem;
+}
+.toggleContainer:hover {
+  background: hsl(228, 12%, 44%);
+}
+.toggleBtn::before{
+  display: block;
+}
+.contentSectionOne {
+  margin-bottom: 1.5rem;
+  top: -3rem;
+  text-align: center;
+  width: 100%;
+  margin: 0rem;
+  padding: 1rem 0rem;
+}
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  gap: 2rem;
+  height: initial;
+}
+.overviewCont{
+  margin: 0 0rem;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0rem 0rem;
+  gap: 0rem;
+}
+.viewsContainer{
+  margin: auto 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.overViewParagrah {
+  margin: auto 1.5rem;
+}
+.overviewLine{
+  margin: rem;
+}
 }
