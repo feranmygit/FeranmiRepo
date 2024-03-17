@@ -43,6 +43,15 @@ function isInViewport(element) {
 
 function handleScroll() {
     const hiddenContainer = document.querySelectorAll('.hiddenContainer');
+    const shakingContainer =document.querySelectorAll('#shakingContainer');
+    shakingContainer.forEach(shakingContainer => {
+        if (isInViewport(shakingContainer)) {
+            shakingContainer.classList.add('shaking');
+        } else {
+            shakingContainer.classList.remove('shaking');
+        }
+    })
+
     hiddenContainer.forEach(hiddenContainer => {
         if (isInViewport(hiddenContainer)) {
             hiddenContainer.classList.add('visible');
