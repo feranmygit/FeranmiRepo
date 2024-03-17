@@ -360,6 +360,28 @@ body{
     margin: 0 3.5rem;
   }
 }
+@media only screen and (max-width: 720px){
+  .overViewParagrah {
+    margin: 0 -0.8rem;
+  }
+  .overviewCont{
+    margin: 19rem  7.5rem;
+  }
+  .contentSectionOne {
+    top: -3rem;
+    text-align: center;
+    width: 13.5rem;
+    margin: auto;
+    padding: 1rem 0rem;
+  }
+  #generalSpacing{
+    padding: 4rem 6rem;
+  }
+  .viewsContainer{
+    margin: auto;
+    width: 10.5rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   #generalSpacing{
     padding: 2.5rem 1.5rem;
