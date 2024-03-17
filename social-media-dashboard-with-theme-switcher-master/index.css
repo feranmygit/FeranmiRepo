@@ -287,6 +287,14 @@ body{
 .overviewLine{
   margin: auto;
 }
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.visible{
+  opacity: 1;
+ transition: 1s ease;
+}
 
 @media only screen and (max-width: 1440px) {
   #generalSpacing{
