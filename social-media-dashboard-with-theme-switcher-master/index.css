@@ -368,15 +368,18 @@ body{
     margin: 18rem  7.5rem;
   }
   .overviewLine{
-    margin: 0 1rem;
+    margin: auto 1rem;
   }
   .overViewParagrah {
-    margin: 0rem;
+    margin: auto 0;
   }
 }
 @media only screen and (max-width: 1045px){
   .overViewParagrah {
     margin: 0 3.5rem;
+  }
+  .mainContent{
+   justify-content: center;
   }
 }
 @media only screen and (max-width: 752px){
