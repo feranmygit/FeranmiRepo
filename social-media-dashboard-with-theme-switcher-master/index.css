@@ -41,18 +41,11 @@ body{
   padding: 0;
   box-sizing: border-box;
   position: relative;
-}
-.light-mode{
-  background-color: hsl(0, 0%, 100%);
-}
-#colors-light-mode{
-  color: hsl(228, 12%, 44%);
+  transition: background-color 0.5s ease;
 }
 .dark-mode{
   background-color: hsl(230, 17%, 14%);
-}
-#colors-dark-mode{
-  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease;
 }
 #generalSpacing{
   padding: 2.5rem 1.5rem;
@@ -65,16 +58,47 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: hsl(225, 100%, 98%);
   border-bottom-left-radius: 30px;
+  background-color: hsl(225, 100%, 98%);
   border-bottom-right-radius: 30px;
+  transition: 0.5s ease;
+}
+.dark-mode .socialHeaderContainer{
+  background-color: hsl(230, 17%, 20%);
+  transition: 0.5s ease;
+}
+.dark-mode .container{
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease;
+}
+.container{
+  transition: 0.5s ease;
 }
 .socialHeaderElement1{
   border-bottom: 1px solid hsl(228, 12%, 44%);
   width: 100%;
 }
-.socialElement1{
-  margin: 0;
+#container1{
+  margin-bottom: 0;
+  color: hsl(230, 17%, 19%);
+  transition: 0.5s ease;
+}
+.dark-mode #container1{
+  margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease;
+}
+#socialElement2{
+  color: hsl(228, 12%, 44%);
+  transition: 0.5s ease;
+}
+#Darkbox{
+  color: hsl(228, 12%, 44%);
+  transition: 0.5s ease;
+}
+.dark-mode #Darkbox{
+  color: hsl(225, 100%, 98%);
+  transition: 0.5s ease;
 }
 #socialElement2{
   color: hsl(228, 12%, 44%);
@@ -99,6 +123,7 @@ body{
   display: flex;
   opacity: 0.5;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .toggleBtn{
   position: relative;
@@ -107,6 +132,16 @@ body{
   margin: 3.5px;
   left: 26px;
   border-radius: 50px;
+  background-color:  hsl(227, 47%, 96%);
+}
+.dark-mode .toggleBtn{
+  display: block;
+  margin: 30px;
+  background-color: hsl(228, 12%, 44%);
+}
+.dark-mode .toggleBtn::before{
+  display: block;
+  margin: -26px;
   background-color:  hsl(227, 47%, 96%);
 }
 .toggleBtn::before{
@@ -135,9 +170,19 @@ body{
   margin-bottom: 1.5rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.dark-mode .contentSectionOne{
+  background-color: hsl(230, 17%, 19%);
+  transition: 0.5s ease;
+}
+.dark-mode .contentSectionOne:hover{
+  background-color: hsl(230, 17%, 16%);
+  transition: 0.5s ease;
 }
 .contentSectionOne:hover{
   background-color: hsl(228, 12%, 90%);
+  transition: 0.5s ease;
 }
 .overviewCont{
   z-index: 1;
@@ -207,9 +252,19 @@ body{
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.dark-mode .viewsContainer{
+  background-color: hsl(230, 17%, 18%);
+  transition: 0.5s ease;
+}
+.dark-mode .viewsContainer:hover{
+  background-color: hsl(230, 17%, 16%);
+  transition: 0.5s ease;
 }
 .viewsContainer:hover{
   background-color: hsl(228, 12%, 90%);
+  transition: 0.5s ease;
 }
 .viewsAccount{
   display: flex;
@@ -326,7 +381,7 @@ body{
   background: hsl(228, 12%, 44%);
 }
 .toggleBtn::before{
-  display: block;
+  display: none;
 }
 .contentSectionOne {
   margin-bottom: 1.5rem;
@@ -364,5 +419,8 @@ body{
 }
 .overviewLine{
   margin: 0rem;
+}
+.toggleContainer:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 }
