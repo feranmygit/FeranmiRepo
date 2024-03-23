@@ -457,7 +457,7 @@ button.items:nth-child(6){
     }
        .navContainer .navList .ulList{
         height: 225px;
-        width: 85%;
+        width: 83%;
         top: 40px;
         display: flex;
         flex-direction: column;
