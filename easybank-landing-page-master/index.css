@@ -469,7 +469,7 @@ button.items:nth-child(6){
         padding: 35px 0 0 0px;
         gap: 0.6rem;
         padding-top: 30px;
-        box-shadow: 0px 300px 300rem rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 300px 10px 300rem rgba(0, 0, 0, 0.5);
 
     }
     #navContainer.active{
