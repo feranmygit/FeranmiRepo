@@ -496,7 +496,7 @@ button.items:nth-child(6){
         padding-bottom: 0rem;
       }
       .upSect{
-        height: 17rem;
+        height: 100%;
       }
       .setion_one{
         position: relative;
@@ -523,6 +523,9 @@ button.items:nth-child(6){
         margin: 0 2rem;
         right: 3%;
         height: 105%;
+    }
+    #hide{
+      margin-top: -3rem;
     }
     .sectionDivOne{
         width: initial;
