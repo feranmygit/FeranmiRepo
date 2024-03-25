@@ -95,14 +95,11 @@ body{
   margin-top: 25px;
   left: 0px;
   background-color: #f9f9f9;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 300rem rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: none;
 }
-.cartPreview.show{
-  display: block;
-  top: 60px;
-}
+
 .cart-item{
   display: none;
 }
@@ -118,8 +115,8 @@ body{
   display: block;
 }
 .navContainer>.navBar>.itemsList{
-    height: 100vh;
-    width: 225px;
+    height: 1000vh;
+    width: 200px;
     background-color: hsl(223, 64%, 98%);
     display: flex;
     flex-direction: column;
@@ -133,7 +130,7 @@ body{
     list-style: none;
     padding: 0px 0px 0px 20px;
     font-size: 22px;
-    box-shadow: 0px 0px 0px rgb(5, 5, 5)
+    box-shadow: 0px 0px 300rem rgb(0 0 0 0.1)
 }
 .remove{
     margin-bottom: 40px;
