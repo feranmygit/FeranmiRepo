@@ -4,26 +4,30 @@
 .root{
     /*color*/
     color: hsl(230, 17%, 14%);
+    color: hsl(228, 12%, 70%);
 }
 body{
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    background-color: hsl(230, 17%, 14%);
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+
 }
 #general_spacing{
-    padding: 1rem;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.headerContainer{
     position: sticky;
-    position: relative;
     top: 0;
-    bottom: 0;
-    z-index: 10000;
+    z-index: 100;
 }
 .myCont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 .myName{
     margin: 0;
@@ -43,7 +47,109 @@ body{
 .link> .github_link> img{
     width: 1rem;
 }
+.imgContainer{
+    margin:0 1.2rem;
+    border-bottom: 1px solid hsl(228, 12%, 40%);
+    height: 30rem;
+}
 .myPicture > img{
     width: 100%;
+    left: 1rem;
+    position: relative;
+}
+.text{
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 70%);
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem 4rem;
+    margin: 0;
+}
+.paragraph{
+    width: 100%;
+    color: hsl(228, 12%, 40%);
+    font-size: 1rem;
+    text-align: center;
+}
+.par{
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+.contactMe{
+   text-align: center;
+   text-transform: uppercase;
+}
 
+.contactMe a{
+    text-decoration: none;
+    color: hsl(228, 12%, 70%);
+    padding-bottom: .5rem;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+.contactMe a:hover{
+    color: green;
+}
+.skillsContainer{
+    text-align: center;
+    margin-top: 3rem;
+}
+.skillbox{
+    color: hsl(228, 12%, 70%);
+}
+.skillSets{
+    color: hsl(228, 12%, 40%);
+    font-size: .8rem;
+}
+.projectcont{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill{
+    margin: 0;
+    color: hsl(228, 12%, 70%);
+}
+.formContainer{
+    margin: 1.5rem;
+}
+.contactPara{
+    text-align: center;
+}
+#skillSets{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .7rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+.contactPara{
+    line-height: 1.5rem;
+    font-size: .95rem;
+}
+input[type="text"]{
+    background-color: rgb(24, 24, 24);
+    border: none;
+    border-bottom: 1px solid hsl(228, 12%, 40%);
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    width: 93%;
+    color: hsl(228, 12%, 70%);
+    padding: 10px;
+}
+#textinbox{
+    background-color: rgb(24, 24, 24);
+    border: none;
+    border-bottom: 1px solid hsl(228, 12%, 40%);
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    width: 93%;
+    color: hsl(228, 12%, 70%);
 }
