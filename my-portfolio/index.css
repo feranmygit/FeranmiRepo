@@ -153,3 +153,16 @@ input[type="text"]{
 #submit{
     display: none;
 }
+.submit{
+    text-decoration: none;
+    color: hsl(228, 12%, 70%);
+    padding-bottom: .5rem;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 11rem;
+    margin-right: auto;
+}
+.submit:hover{
+   color: green;
+}
