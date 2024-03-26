@@ -54,7 +54,7 @@ body{
     position: relative;
 }
 .text{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: hsl(228, 12%, 70%);
     justify-content: center;
     text-align: center;
@@ -71,7 +71,7 @@ body{
 .par{
     padding-bottom: 1rem;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
 }
 .contactMe{
@@ -94,7 +94,7 @@ body{
 }
 .skillsContainer{
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 1rem 0;
 }
 .skillbox{
     color: hsl(228, 12%, 70%);
@@ -102,6 +102,7 @@ body{
 .skillSets{
     color: hsl(228, 12%, 40%);
     font-size: .8rem;
+    cursor: pointer;
 }
 .projectcont{
     padding: 1.2rem;
