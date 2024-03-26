@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.root{
+    /*color*/
+    color: hsl(230, 17%, 14%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: hsl(230, 17%, 14%);
+}
+#general_spacing{
+    padding: 1rem;
+    position: sticky;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+}
+.myCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.myName{
+    margin: 0;
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 70%);
+}
+.DevCont{
+    border-bottom: 2px solid green;
+}
+.socialLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.link> .github_link> img{
+    width: 1rem;
+}
+.myPicture > img{
+    width: 100%;
+
+}
