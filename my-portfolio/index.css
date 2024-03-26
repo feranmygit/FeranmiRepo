@@ -43,7 +43,8 @@ body{
     width: 1rem;
 }
 .imgContainer{
-    margin:0 1.2rem;
+    margin:0 1.2rem ;
+    padding-bottom: 2rem;
     border-bottom: 1px solid hsl(228, 12%, 40%);
     height: 30rem;
 }
@@ -53,12 +54,12 @@ body{
     position: relative;
 }
 .text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: hsl(228, 12%, 70%);
     justify-content: center;
     text-align: center;
     font-weight: 700;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     margin: 0;
 }
 .paragraph{
@@ -68,9 +69,9 @@ body{
     text-align: center;
 }
 .par{
-    padding: 0rem 1rem 1rem 1rem;
+    padding-bottom: 1rem;
     margin: 0;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 .contactMe{
@@ -93,7 +94,7 @@ body{
 }
 .skillsContainer{
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 .skillbox{
     color: hsl(228, 12%, 70%);
