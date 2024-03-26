@@ -169,6 +169,9 @@ input[type="text"]{
 .footerContainer{
     margin-top: 6rem;
 }
+.gmail{
+    margin-top: 10px;
+}
 #cright{
     color: hsl(228, 12%, 40%);
     text-align: center;
