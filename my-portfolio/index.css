@@ -166,3 +166,12 @@ input[type="text"]{
 .submit:hover{
    color: green;
 }
+.footerContainer{
+    margin-top: 6rem;
+}
+#cright{
+    color: hsl(228, 12%, 40%);
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
