@@ -9,7 +9,7 @@
 <body>
     <header class="headerContainer" id="general_spacing">
         <div class="myCont">
-            <div class="nameCont"><h1 class="myName"><span class="DevCont">Dev</span> Feranmi</h1></div>
+            <div class="nameCont"><h1 class="myName"><span class="DevCont">Dev</span> feranmi</h1></div>
             <div class="socialLinks">
                 <div class="link"><a href="" class="github_link"><img src="./assets/image/github.png" alt=""></a></div>
                 <div class="link"><a href="" class="github_link"><img src="./assets/image/twitter.png" alt=""></a></div>
@@ -20,10 +20,10 @@
     </header>
     <section class="sectionContainer">
         <div class="imgContainer">
-            <div class="myPicture"><img src="./assets/image/feranmi.jpg" alt=""></div>
-            <div class="textPage"><h2 class="text">Nice to meet you! I'm <span class="myName">Dev Feranmi</span>.</h2></div>
+            <div class="myPicture"><img class="myProfile" src="./assets/image/pic-removebg-preview.png" alt=""></div>
+            <div class="textPage"><h2 class="text">Nice to meet you! I'm <span class="DevCont">Dev Feranmi</span>.</h2></div>
             <div class="paragraph"><p class="par">Based in Lagos. l'm a full stack web developer passionate about building accessible web apps that users love.</p></div>
-            <div class="contactMe"><a href="" class="contact_link">contact me</a></div>
+            <div class="contactMe" id="contactMe"><a href="div.skillsContainer:nth-child(1)" class="contact_link">Contact me</a></div>
         </div>
         <div class="skillsContainer">
             <div class="skillbox"><h2 class="skill">Skills</h2></div>
@@ -32,25 +32,28 @@
                 <div class="mySkill"><h4 class="myskillsets">CSS</h4></div>
                 <div class="mySkill"><h4 class="myskillsets">JavaScript</h4></div>
             </div>
+        </div>
+
+        <div class="projectdivCon">
             <div class="projectcont">
-                <div class="projectContainer"><h2 class="skill">projects</h2></div>
-                <div class="contactMe"><a href="" class="contact_link">contact me</a></div>
+                <div class="projectContainer"><h2 class="skill">Projects</h2></div>
+                <div class="contactMe"><a href="" class="contact_link">Contact me</a></div>
             </div>
-            
-            <div class="projectcont">
-                <div class="projectContainer"><h2 class="skill">Contact</h2></div>
-                <div class="contactParaContainer"><p class="contactPara">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p></div>
-                <form action="./submit.html">
-                    <label for="fname">name</label><br>
-                    <input type="text" value="" id="fname" name="fname"><br> <br>
-                    <label for="email">email</label><br>
-                    <input type="text" value="" id="email" name="email"><br> <br>
-                    <label for="textinbox">message</label><br>
-                    <textarea name="texinbox" id="textinbox" cols="30" rows="10"></textarea><br>
-                    <label for="submit" class="submit">send message</label><br>
-                    <input type="submit" value="submit" id="submit" name="submit">
-                </form>
-            </div>
+        </div>
+        
+        <div class="formContainer">
+            <div class="skillsContainer"><h2 class="skill">Contact</h2></div>
+            <div class="skillSets"><p class="contactPara">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p></div>
+            <form action="./submit.html" class="skillSets" id="skillSets">
+                <label for="fname">name</label><br>
+                <input type="text" value="" id="fname" name="fname"><br> <br>
+                <label for="email">email</label><br>
+                <input type="text" value="" id="email" name="email"><br> <br>
+                <label for="textinbox">message</label><br>
+                <textarea name="textinbox" id="textinbox" cols="30" rows="5"></textarea><br>
+                <label for="submit" class="submit">send message</label><br>
+                <input type="submit" value="submit" id="submit" name="submit">
+            </form>
         </div>
     </section>
     <footer class="footerContainer">
