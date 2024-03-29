@@ -27,7 +27,7 @@ body{
 .myName{
     margin: 0;
     font-size: 1.2rem;
-    color: hsl(228, 12%, 70%);
+    color: hsl(228, 12%, 100%);
 }
 .DevCont{
     border-bottom: 2px solid green;
@@ -55,7 +55,7 @@ body{
 }
 .text{
     font-size: 1.8rem;
-    color: hsl(228, 12%, 70%);
+    color: hsl(228, 12%, 100%);
     justify-content: center;
     text-align: center;
     font-weight: 700;
@@ -64,7 +64,7 @@ body{
 }
 .paragraph{
     width: 100%;
-    color: hsl(228, 12%, 40%);
+    color: hsl(228, 12%, 60%);
     font-size: 1rem;
     text-align: center;
 }
@@ -100,7 +100,7 @@ body{
     color: hsl(228, 12%, 70%);
 }
 .skillSets{
-    color: hsl(228, 12%, 40%);
+    color: hsl(228, 12%, 60%);
     font-size: .8rem;
     cursor: pointer;
 }
@@ -112,10 +112,10 @@ body{
 }
 .skill{
     margin: 0;
-    color: hsl(228, 12%, 70%);
+    color: hsl(228, 12%, 100%);
 }
 .formContainer{
-    margin: 1.5rem;
+    margin: 8rem 1.5rem 1.5rem 1.5rem;
 }
 .contactPara{
     text-align: center;
