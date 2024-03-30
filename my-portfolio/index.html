@@ -20,14 +20,17 @@
     </header>
     <section class="sectionContainer">
         <div class="imgContainer">
-            <div class="myPicture"><img class="myProfile" src="./assets/image/pic-removebg-preview.png" alt=""></div>
-            <div class="textPage"><h2 class="text" id="text">Nice to meet you! I'm <span class="DevCont">Dev Feranmi</span>.</h2></div>
-            <div class="paragraph"><p class="par">Based in Lagos. l'm a full stack web developer passionate about building accessible web apps that users love.</p></div>
-            <div class="contactMe" id="contactMe"><a href="#formContainer" class="contact_link">Contact me</a></div>
+            <div class="myPicture">
+            </div>
+            <div class="textContainerBox">
+                <div class="textPage"><h2 class="text" id="text">Nice to meet you! I'm <span class="DevCont">Dev Feranmi</span>.</h2></div>
+                <div class="paragraph"><p class="par">Based in Lagos. l'm a full stack web developer passionate about building accessible web apps that users love.</p></div>
+                <div class="contactMe" id="contactMe"><a href="#formContainer" class="contact_link">Contact me</a></div>
+            </div>
         </div>
-        <div class="skillsContainer">
+        <div class="skillsContainer" id="skillsContainer">
             <div class="skillbox"><h2 class="skill">Skills</h2></div>
-            <div class="skillSets">
+            <div class="skillSets" id="skillSetscont">
                 <div class="mySkill"><h4 class="myskillsets">HTML</h4></div>
                 <div class="mySkill"><h4 class="myskillsets">CSS</h4></div>
                 <div class="mySkill"><h4 class="myskillsets">JavaScript</h4></div>
@@ -40,12 +43,12 @@
                     <h2 class="skill">Projects</h2>
                     <h5 class="skillSets">Coming soon!</h5>
                 </div>
-                <div class="contactMe"><a href="#formContainer" class="contact_link">Contact me</a></div>
+                <div class="contactMe" id="contactMe"><a href="#formContainer" class="contact_link">Contact me</a></div>
             </div>
         </div>
         
         <div class="formContainer" id="formContainer">
-            <div class="skillsContainer"><h2 class="skill">Contact</h2></div>
+            <div class="skillsContainer"><h2 class="skill" id="ContactInfo">Contact</h2></div>
             <div class="skillSets"><p class="contactPara">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p></div>
             <form action="./submit.html" class="skillSets" id="skillSets">
                 <label for="fname">name</label><br>
@@ -60,7 +63,7 @@
         </div>
     </section>
     <footer class="footerContainer">
-        <div class="copyright"><br>
+        <div class="copyright">
             <div class="myCont">
                 <div class="socialLinks">
                     <div class="link"><a href="https://github.com/feranmygit" class="github_link"><img src="./assets/image/github.png" alt=""></a></div>
@@ -69,9 +72,11 @@
                     <div class="link"><a href="https://www.linkdin.com/in/callmheferanmi" class="github_link"><img src="./assets/image/linkdln.png" alt=""></a></div>
                 </div>
             </div>
-            <div class="gmail" id="cright">Gmail: feranmygit@gmail.com</div>
-            <div class="ab" id="cright">Copyright©2024. All Rights Reserved</div>
-          </div>
+            <div class="myCont2">
+                <div class="gmail" id="cright">Gmail: feranmygit@gmail.com</div>
+                <div class="ab" id="cright">Copyright©2024. All Rights Reserved</div>
+            </div>
+        </div>
     </footer>
 
     <script src="index.js"></script>

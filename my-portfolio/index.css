@@ -43,7 +43,7 @@ body{
     width: 1rem;
 }
 .imgContainer{
-    margin:0 1.2rem ;
+    margin:0 1.2rem 0 0;
     padding-bottom: 4rem;
     border-bottom: 1px solid hsl(228, 12%, 40%);
     height: 30rem;
@@ -102,7 +102,6 @@ body{
 .skillSets{
     color: hsl(228, 12%, 60%);
     font-size: .8rem;
-    cursor: pointer;
 }
 .projectcont{
     padding: 1.2rem;
@@ -168,6 +167,7 @@ input[type="text"]{
 }
 .footerContainer{
     margin-top: 6rem;
+    border-top: 1px solid hsl(228, 12%, 40%);
 }
 .gmail{
     margin-top: 10px;
@@ -177,4 +177,207 @@ input[type="text"]{
     text-align: center;
     font-size: 12px;
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1440px) {
+    #general_spacing {
+        padding: 3rem 10rem 0 10rem;
+        overflow: hidden;
+      }
+    .myCont {
+        flex-direction: row;
+      }
+      .myName {
+        font-size: 1.5rem;
+      }
+      .link> .github_link> img{
+        width: 2rem;
+    }
+    .imgContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+        padding-bottom: 10rem;
+        margin: 0 8rem 0rem 10rem;
+    }
+    .textContainerBox{
+        margin-top: 4.2rem;
+        padding: 3rem 10rem 3rem 0;
+        width: 80%;
+    }
+    .text {
+        font-size: 3.5rem;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 2rem;
+      }
+      #contactMe{
+        text-align: left;
+      }
+      #contactMe > a{
+        font-size: 1.1rem;
+      }
+    .myPicture{
+        background-image: url(./assets/image/pic-removebg-preview-cropped.png);
+        width: 60%;
+        background-size: cover;
+    }
+    .par {
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }      
+    .skillsContainer {
+        padding: 0 10rem;
+      }
+      #skillsContainer{
+        text-align: left;
+      }
+      #skillSetscont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .projectcont {
+        padding: 1.2rem 10rem;
+    } 
+    #ContactInfo{
+        font-size: 2.5rem;
+    }
+    .formContainer {
+        padding: 0 10rem;
+      }
+      #skillSets {
+        padding: 0 6rem;
+      }
+    .contactPara {
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding: 0 17rem;
+      }
+      input[type="text"]{
+        width: 80%;
+      }
+    #textinbox{
+        width: 81%;
+        height: 10rem;
+    }
+    .submit {
+        margin-left: 39rem;
+        font-size: 1.1rem;
+      }
+      .copyright {
+        padding: 1.2rem 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .projectdivCon{
+        margin-top: 3rem;
+      }
+}
+
+@media only screen and (max-width: 500px) {
+    #general_spacing {
+        padding: 1rem 1.5rem 0 1.5rem;
+      }
+    .myCont {
+        flex-direction: column;
+      }
+      .myName {
+        font-size: 1rem;
+      }
+      .link> .github_link> img{
+        width: 1rem;
+    }
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 5rem 0;
+        margin: 0 1.2rem;
+    }
+    .textContainerBox{
+        margin-top: initial;
+        padding: 0 0 0 0rem;
+        width: 100%;
+    }
+    .text {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 1rem 1.5rem;
+        margin: 0;
+    }
+      #contactMe{
+        text-align: center;
+      }
+      #contactMe > a{
+        font-size: 12px;
+      }
+    .myPicture{
+        background-image: url(./assets/image/pic-removebg-preview.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        margin: 0 1.5rem;
+        width: 100%;
+        border: none;
+    }
+    .par {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin: 0;
+    } 
+    .skillsContainer {
+        text-align: center;
+        padding: 0 1.5rem;
+      }
+      #skillsContainer{
+        text-align: center;
+      }
+      #skillSetscont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .projectcont {
+        padding: 1.2rem;
+    }   
+    #ContactInfo{
+        font-size: 1.5rem;
+    }  
+    .formContainer {
+        padding: 0 0rem;
+      }
+      #skillSets {
+        padding: 0rem;
+      } 
+    .contactPara {
+        line-height: 1.5rem;
+        font-size: .95rem;
+        padding: 0 0rem;
+      }
+      input[type="text"]{
+        width: 93%;
+      }
+      #textinbox{
+        width: 94%;
+        height: 5rem;
+    }
+    .submit {
+        margin-left: 9rem;
+        font-size: .8rem;
+      }
+      .copyright {
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .projectdivCon{
+        margin-top: 0rem;
+      }
 }
