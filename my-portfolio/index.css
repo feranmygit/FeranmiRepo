@@ -148,6 +148,7 @@ input[type="text"]{
     margin-bottom: 2rem;
     width: 94%;
     color: hsl(228, 12%, 70%);
+    padding: 10px;
 }
 #submit{
     display: none;
@@ -497,7 +498,7 @@ input[type="text"]{
       .projectdivCon{
         margin-top: 0rem;
       }
-      
+
       /*Submitted message pop*/
 
       .message-container{
@@ -510,7 +511,6 @@ input[type="text"]{
       .message-paragraph{
         line-height: 1.5rem;
         font-size: 1rem;
-
       }
       .go-back-btn{
         padding: 1rem 2rem;
