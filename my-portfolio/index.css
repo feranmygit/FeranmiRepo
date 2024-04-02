@@ -336,6 +336,24 @@ input[type="text"]{
       }
       
      
+      @media only screen and (max-width: 1000px){
+        /*Submitted message pop*/
+
+      .message-container{
+        padding: 1rem 3rem;
+        margin: 8rem 10rem;
+      }
+      .message-pop{
+        font-size: 2.5rem;
+      }
+      .message-paragraph{
+        line-height: 1.5rem;
+      }
+      .go-back-btn{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+      }
 
 
 @media only screen and (max-width: 500px) {
