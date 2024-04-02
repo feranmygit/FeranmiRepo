@@ -337,6 +337,43 @@ input[type="text"]{
       
      
       @media only screen and (max-width: 1000px){
+        #general_spacing {
+          padding: 3rem 5rem 0 5rem;
+        }
+        .imgContainer{
+          margin: 0 3rem 0rem 5rem;
+        }
+        .textContainerBox {
+          padding: 3rem 3rem 3rem 0;
+          width: 80%;
+        }
+        .text {
+          font-size: 3rem;
+        }
+        .skillsContainer {
+          padding: 0 5rem;
+        }
+        .projectcont {
+          padding: 1.2rem 5rem;
+        }
+        .formContainer {
+          padding: 0 5rem;
+        }
+        .contactPara {
+          padding: 0 8rem;
+        }
+        #skillSets {
+          padding: 0 3rem;
+        }
+        .submit {
+          margin-left: 28rem;
+        }
+        .copyright {
+          padding: 1.2rem 5rem;
+        }
+
+
+
         /*Submitted message pop*/
 
       .message-container{
@@ -353,7 +390,9 @@ input[type="text"]{
         padding: 1rem 2rem;
         font-size: 1rem;
       }
-      }
+}
+
+
 
 
 @media only screen and (max-width: 500px) {
