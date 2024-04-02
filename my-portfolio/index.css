@@ -194,6 +194,7 @@ input[type="text"]{
 }
 .message-paragraph{
   line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 .go-back-btn{
   background-color: green;
@@ -393,8 +394,6 @@ input[type="text"]{
 }
 
 
-
-
 @media only screen and (max-width: 500px) {
     #general_spacing {
         padding: 1rem 1.5rem 0 1.5rem;
@@ -498,6 +497,7 @@ input[type="text"]{
       .projectdivCon{
         margin-top: 0rem;
       }
+      
       /*Submitted message pop*/
 
       .message-container{
@@ -510,7 +510,6 @@ input[type="text"]{
       .message-paragraph{
         line-height: 1.5rem;
         font-size: 1rem;
-                margin-bottom: 2rem;
 
       }
       .go-back-btn{
