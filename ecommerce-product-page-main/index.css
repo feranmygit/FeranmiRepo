@@ -57,7 +57,7 @@ body{
 #input:checked ~ .navContainer>.navBar>.itemsList{
     left: 0px;
     transition: 0.05s;
-    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.8);
 }
 #productContents{
   display: none;
