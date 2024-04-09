@@ -91,7 +91,7 @@ body{
 #input:checked ~ .navbar .ulist{
     display: block;
     right: 0;
-    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.8);
 }
 .resize{
     margin-left: 10.5rem;
