@@ -502,7 +502,7 @@ button.items:nth-child(6){
         height: 27vh;
         width: 100%;
         z-index: -3;
-        overflow: hidden;
+        overflow: visible;
     }
     .imgContainer{
         background-image: url(./images/bg-intro-mobile.svg);
@@ -518,8 +518,8 @@ button.items:nth-child(6){
         background-size: cover;
         top: 0px;    
         margin: 0 2rem;
-        right: 3%;
-        height: 105%;
+        right: -10%;
+        height: 130%;
     }
     #hide{
       margin-top: -3rem;
