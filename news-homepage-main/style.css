@@ -36,7 +36,7 @@ body > header > label{
 
 .middle-line {
   width: 30px;
-  background-color: #000000; /* Color of the lines */
+  background-color: black; /* Color of the lines */
   height: 2px;
   position: absolute;
   left: 0;
@@ -49,7 +49,7 @@ body > header > label{
   content: '';
   width: 30px;
   height: 2px;
-  background-color: #000000; /* Color of the lines */
+  background-color: black; /* Color of the lines */
   position: absolute;
   left: 0;
   transition: transform 0.3s ease;
@@ -102,12 +102,13 @@ body > header > label{
 #input:checked ~ .navbar .ulist{
     display: block;
     right: 0;
-    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.6);
 }
 .resize{
     margin-left: 10.5rem;
     margin-bottom: 3rem;
     cursor: pointer;
+    height: 25px;
 }
 .image{
     width: 100%;
@@ -138,8 +139,16 @@ body > header > label{
     font-family: 'Arial Narrow Bold', sans-serif;
     border: none;
     transition: 0.3s;
+    text-decoration: none;
 }
 .btn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.btn a{
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+}
+.btn a:hover{
     background-color: hsl(240, 100%, 5%);
 }
 #section_two{
@@ -227,9 +236,6 @@ body > header > label{
       .mainheader {
         margin: 1.2rem 0 2.5rem 0;
       }
-     .hambuger{
-        display: none;
-     }
       .navbar .ulist {
         height: 0;
         z-index: 0;
@@ -243,6 +249,9 @@ body > header > label{
         right: 0rem;
         background-color: white;
 
+      }
+      .container{
+        display: none;
       }
       .resize{
         display: none;
@@ -311,17 +320,8 @@ body > header > label{
       .mainheader {
         margin: 1.2rem 0px;
       }
-      .hambuger {
-        position: absolute;
-        top: 1.125rem;
-        display: inline-block;
-        background-color: black;
-        margin-bottom: 0.4rem;
-        height: 3px;
-        top: 1.2rem;
-        right: -8rem;
-        width: 2rem;
-        cursor: pointer;
+      .container{
+        display: block;
       }
       .navbar .ulist {
         height: 100vh;
@@ -348,8 +348,8 @@ body > header > label{
         height: 280px;
       }
       .header_one {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 3.2rem;
+        line-height: 3rem;
         padding-block: 1rem;
       } 
       .paragraph_one {
