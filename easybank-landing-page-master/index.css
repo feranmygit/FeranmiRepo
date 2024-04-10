@@ -137,6 +137,7 @@ button.items:nth-child(6){
 .paraOne{
     color: hsl(233, 8%, 62%);
     line-height: 25px;
+    font-size: 20px;
 }
 .btnContainer{
     text-align: center;
