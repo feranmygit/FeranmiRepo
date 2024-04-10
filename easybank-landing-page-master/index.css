@@ -8,7 +8,7 @@ body{
     padding: 0;
 }
 #classic{
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 1.2rem;
 }
 .headerContainer{
     display: flex;
@@ -452,7 +452,7 @@ button.items:nth-child(6){
 
 @media only screen and (max-width: 600px) {
      #classic {
-        padding: 1.2rem 2rem;
+        padding: 1.2rem 1.2rem;
       }
       .headerContainer{
         position: sticky;
