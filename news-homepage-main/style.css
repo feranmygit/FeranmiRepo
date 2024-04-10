@@ -10,48 +10,59 @@ body{
 }
 .mainheader{
     display: flex;
-    justify-content: space-between;
-    margin: 1.2rem 0px;
 }
 #input{
     display: none;
   
 }
-.container{
-  position: relative; 
-   width: 2rem;
+body > header > label{
+  margin-inline-end: 0.1rem;
+  margin-inline-start: auto;
+  margin-top: 10px;
 }
-.hambuger{
-    position: absolute;
-    top: 1.125rem;
-    display: inline-block;
-    background-color: black;
-    margin-bottom: 0.4rem;
-    height: 3px;
-    position: fixed;
-    top: 2rem;
-    right: 1rem;
-    width: 2rem;
-    cursor: pointer;
+.hamburger-menu {
+  top: 20px; /* Adjust as needed */
+  right: 0px; /* Adjust as needed */
+  z-index: 1; /* Ensure it's above other content */
+  cursor: pointer;
 }
-.hambuger::before{
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: black;
-    margin-top: -0.4rem;
-    height: 3px;
-    width: 100% 
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  background-color: hsl(36, 100%, 99%); /* Color of the hamburger icon */
+  position: relative;
 }
-.hambuger::after{
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: black;
-    margin-top: 0.4rem;
-    height: 3px;
-    width: 100% 
+
+.middle-line {
+  width: 30px;
+  background-color: #000000; /* Color of the lines */
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #000000; /* Color of the lines */
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon::before {
+  top: 0;
+}
+
+.hamburger-icon::after {
+  bottom: 0;
+}
+
 .navbar .ulist{
     display: none;
 }
@@ -293,7 +304,7 @@ body{
   }
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:600px) {
     body {
         margin: 0.8rem;
       }
@@ -334,10 +345,11 @@ body{
         background-image: url(./assets/images/image-web-3-mobile.jpg);
         background-size: cover;
         background-position: center;
+        height: 280px;
       }
       .header_one {
-        font-size: 2.35rem;
-        line-height: 2.2rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
         padding-block: 1rem;
       } 
       .paragraph_one {
