@@ -1,0 +1,57 @@
+.hamburger-menu {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    width: 30px;
+    height: 20px;
+    background-color: #fff; /* Color of the hamburger icon */
+    position: relative;
+  }
+  
+  .middle-line {
+    width: 30px;
+    background-color: #333; /* Color of the lines */
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #333; /* Color of the lines */
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-icon::before {
+    top: 0;
+  }
+  
+  .hamburger-icon::after {
+    bottom: 0;
+  }
+  
+  /* Adjust the lines to create the hamburger icon */
+  .hamburger-icon.open::before {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .hamburger-icon.open::after {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  .hamburger-icon.open .middle-line {
+    opacity: 0; /* Hide the middle line when hamburger is open */
+  }
+  
