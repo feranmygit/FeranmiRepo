@@ -183,7 +183,7 @@ button.items:nth-child(6){
     margin: 0px;
     color:hsl(233, 8%, 62%);
     font-size: 0.6rem;
-    font-weight: 300;
+    font-weight: 400;
     font-family: sans-serif;
 }
 .blogPostHeader3{
@@ -196,7 +196,8 @@ button.items:nth-child(6){
     font-size: 13px;
     color:  hsl(233, 8%, 62%);
     margin: 0;
-    font: 300;
+    line-height: 20px;
+    font-weight: 400;
 }
 #blogSpace{
     margin-top: 3rem;
