@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
 .root{
     box-sizing: border-box;
     background-color: hsl(36, 100%, 99%);
 }
 body{
     margin: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 .logo{
     display: inline-block;
@@ -117,9 +126,8 @@ body > header > label{
     width: 100%;
 }
 .header_one{
-    font-weight: 1000;
-    line-height: 3.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: 800;
+    line-height: 3rem;
     margin: 0px;   
     padding-block: 1rem;
 }
@@ -134,17 +142,17 @@ body > header > label{
   color: hsl(236, 13%, 42%);
   line-height: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 13px;
+  font-size: 14px;
 }
 .paragraph> strong{
   color: black;
-  font-weight: 700;
+  font-weight: 800;
 }
 .main-para{
   margin: 0 1rem;
 }
 #last-paragragh{
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .btn{
     padding: 1rem;
@@ -154,10 +162,10 @@ body > header > label{
     background-color: hsl(5, 85%, 63%);
     border-color: 1px solid hsl(5, 85%, 63%);
     color: hsl(36, 100%, 99%);
-    font-family: 'Arial Narrow Bold', sans-serif;
     border: none;
     transition: 0.3s;
     text-decoration: none;
+    font-weight: 700;
 }
 .btn:hover{
     background-color: hsl(240, 100%, 5%);
@@ -175,7 +183,6 @@ body > header > label{
     background-color: hsl(240, 100%, 5%);
     padding: 1rem;
     margin-bottom: 3.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header_two{
     color: hsl(35, 77%, 62%);
@@ -190,7 +197,6 @@ body > header > label{
     color: hsl(36, 100%, 99%);
     text-decoration: none;
     transition: 0.3s;
-
 }
 .sub_header_one a:hover{
     color: hsl(35, 77%, 62%);
@@ -281,7 +287,6 @@ body > header > label{
         grid-template-areas: 'header header header header right right'
                              'menu menu main main right right'
                              'footer1 footer1 footer2 footer2 footer3 footer3';  
-
         gap: 2rem;
       }
       #sectionContainer{
@@ -291,7 +296,6 @@ body > header > label{
         background-position: center;
         height: 250px;
       }
-     
      .menu{
         grid-area: menu;
       }
@@ -367,9 +371,11 @@ body > header > label{
         height: 280px;
       }
       .header_one {
-        font-size: 3.2rem;
         padding-block: 1rem;
       } 
+      #head-id-container{
+        margin: 0 1rem;
+      }
       .paragraph_one {
         line-height: 1.5rem;
         font-size: 15px;
