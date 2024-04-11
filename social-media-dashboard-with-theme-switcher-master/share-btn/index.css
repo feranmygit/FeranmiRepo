@@ -1,0 +1,77 @@
+/* Initially hide the share links */
+.share-links {
+    display: none;
+  }
+
+  /* show up the share link on toggle (js)*/
+  .show {
+    display: block;
+  }
+  /* Style for the share icon */
+  .share-icon img {
+    cursor: pointer;
+  }
+  
+  /* Style for the share links */
+  .share-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Add specific styles for each social media share link */
+  .facebook { color: #3b5998; }
+  .twitter { color: #1da1f2; }
+  .linkedin { color: #0077b5; }
+  
+
+
+
+
+
+
+/* creating a v-shape conntainer */
+  .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease;
+  }
+  .container:hover {
+    opacity: 1; /* Show the V-shape when hovering over the container */
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    background-color: hsl(228, 13%, 40%); /* Example color */
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: calc(60% - 2px);
+    left: 50%;
+    transform: translateX(-70%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0px 15px; /* Adjust size and shape of the V */
+    border-color: hsl(228, 13%, 40%) transparent transparent transparent;
+    z-index: 1; /* Ensure the V-shape is above the icon */
+    transition: opacity 0.3s ease;
+    opacity: 10; /* Initially hidden */
+  }
+  
+  .container:hover::before {
+    opacity: 1; /* Show the V-shape when hovering over the container */
+  }
+  
