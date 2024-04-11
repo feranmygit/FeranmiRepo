@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <!-- Default CSS file -->
+  <link id="default-theme" rel="stylesheet" href="default.css">
+  <!-- Other CSS files -->
+  <link id="theme-1" rel="stylesheet" href="theme1.css" disabled>
+  <link id="theme-2" rel="stylesheet" href="theme2.css" disabled>
+  <style>
+    body{
+      visibility: hidden;
+    }
+  </style>
+  <!-- Add more CSS files as needed -->
+</head>
+<body>
+  <!-- Your website content goes here -->
+  <div class="navContainer" >
+    <nav class="navList">
+      <ul class="ulList" id="navContainer">
+        <li class="items" ><a id="fitems" href="">Home</li></a>
+        <li class="items"><a href="">About</li></a>
+        <li class="items"><a href="">Contact</li></a>
+        <li class="items"><a href="">Blog</li></a>
+        <li class="items"><a href="">Careers</li></a>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Buttons to switch between themes -->
+  <button onclick="activateTheme('default-theme')">Default Theme</button>
+  <button onclick="activateTheme('theme-1')">Theme 1</button>
+  <button onclick="activateTheme('theme-2')">Theme 2</button>
+  <!-- Add more buttons for additional themes -->
+  
+  <!-- Your JavaScript code goes here -->
+  <script src="./index.js"></script>
+</body>
+</html>

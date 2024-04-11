@@ -1,0 +1,48 @@
+
+/* Theme 2 styles */
+body {
+    background-color: #d9ead3;
+    color: #005500;
+
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  button:hover {
+    background-color: #449d44;
+
+  }
+  .navContainer .navList .ulList{
+    height: 225px;
+    width: 85%;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    right: 0rem;
+    background-color: hsl(0, 0%, 100%);
+    margin: 5rem 2rem 0rem 0rem;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    padding: 20px 0 0 0px;
+    list-style: none;
+    border-radius: 10px;
+}
+.navContainer .navList .ulList>.items{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navContainer .navList .ulList>.items> a{
+    text-decoration: none;
+    color: #449d44;
+}
