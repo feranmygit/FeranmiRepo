@@ -65,7 +65,7 @@
     height: 0;
     border-style: solid;
     border-width: 15px 15px 0px 15px; /* Adjust size and shape of the V */
-    border-color: hsl(228, 13%, 40%) transparent transparent transparent;
+    border-color: hsl(228, 13%, 40%) transparent;
     z-index: 1; /* Ensure the V-shape is above the icon */
     transition: opacity 0.3s ease;
     opacity: 10; /* Initially hidden */
