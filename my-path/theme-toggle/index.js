@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (activeTheme) {
       activateTheme(activeTheme);
     }else {
-      document.body.style.visibility = 'hidden';
+      document.body.style.visibility = 'visible';
     }
 
 });
