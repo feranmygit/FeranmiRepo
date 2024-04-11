@@ -104,6 +104,9 @@ body > header > label{
     right: 0;
     box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.6);
 }
+#active a:visited{
+  color: hsl(5, 85%, 63%);
+}
 .resize{
     margin-left: 10.5rem;
     margin-bottom: 3rem;
@@ -115,18 +118,33 @@ body > header > label{
 }
 .header_one{
     font-weight: 1000;
-    font-size: 2.35rem;
+    line-height: 3.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     margin: 0px;   
     padding-block: 1rem;
-    line-height: 2.2rem;
 }
 .paragraph_one{
     color: hsl(236, 13%, 42%);
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin-bottom: 0.5rem;
     font-size: 15px;
     margin-top: 0.5px;
+}
+.paragraph{
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+.paragraph> strong{
+  color: black;
+  font-weight: 700;
+}
+.main-para{
+  margin: 0 1rem;
+}
+#last-paragragh{
+  margin-bottom: 3rem;
 }
 .btn{
     padding: 1rem;
@@ -143,6 +161,7 @@ body > header > label{
 }
 .btn:hover{
     background-color: hsl(240, 100%, 5%);
+    transition: 0.3s;
 }
 .btn a{
     text-decoration: none;
@@ -150,6 +169,7 @@ body > header > label{
 }
 .btn a:hover{
     background-color: hsl(240, 100%, 5%);
+    transition: 0.3s;
 }
 #section_two{
     background-color: hsl(240, 100%, 5%);
@@ -176,7 +196,7 @@ body > header > label{
     color: hsl(35, 77%, 62%);
 }
 .paragraph_two{
-    color: hsl(236, 13%, 42%);
+    color: hsl(236, 13%, 60%);
     font-size: 14px;
     border-bottom: 1px solid hsl(236, 13%, 42%);
     padding-bottom: 2rem;
@@ -184,7 +204,7 @@ body > header > label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .paragraph_three{
-    color: hsl(236, 13%, 42%);
+    color: hsl(236, 13%, 60%);
     font-size: 14px;
     margin-top: 0.5rem;
     margin-bottom: 0px;
@@ -295,7 +315,6 @@ body > header > label{
    }
    .header_one {
     font-size: 2.8rem;
-    line-height: 3rem;
     padding-block: 0.5rem;
   }
   .paragraph_one {
@@ -349,7 +368,6 @@ body > header > label{
       }
       .header_one {
         font-size: 3.2rem;
-        line-height: 3rem;
         padding-block: 1rem;
       } 
       .paragraph_one {
