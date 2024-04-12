@@ -6,3 +6,7 @@ document.querySelector('.hamburger-icon').addEventListener('click', function() {
     }
   });
   
+  function toggleMenu() {
+    var navContainer = document.getElementById('navContainer');
+    navContainer.classList.toggle('hidden')
+  }
