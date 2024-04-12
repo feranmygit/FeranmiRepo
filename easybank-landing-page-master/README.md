@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/Web%20capture_9-3-2024_223026_127.0.0.1.jpeg)
-![](./screenshots/Web%20capture_9-3-2024_223443_127.0.0.1.jpeg)
+![](./screenshots/Screenshot_12-4-2024_102340_127.0.0.1.jpeg)
+![](./screenshots/127.0.0.1_5501_easybank-landing-page-master_index.html%20(1).png)
 
 ### Links
 ## My process
@@ -47,31 +47,17 @@ i learned using javascript to toggle hamburger menu displays, which enhance the 
 To see how you can add code snippets, see below:
 
 ```html
-      <input type="checkbox" name="input" id="input">
-      <label for="input" id="hambuggerContainer">
-        <div class="hambugger" id="hambuger" onclick="toggleMenu()"></div>
-        <div id="removeContainer" onclick="toggleMenu()"><img class="remove" src="./images/icon-close.svg" alt=""></div>
-      </label
+     <div class="bttn" id="close-btn"><button class="items" id="btn">Request Invite</button></div>
 ```
 ```css
-#input:checked ~ .navContainer{
-    display: block;
+      #btn{
+   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
 }
-
 ```js
-function toggleMenu() {
-    const hambugger = document.querySelector('.hambugger');
-    const removeContainer = document.querySelector('#removeContainer');
-    
-    if (hambugger.style.display === 'none') {
-        hambugger.style.display = 'block';
-        removeContainer.style.display = 'none';
-    }
-    else {
-        hambugger.style.display = 'none';
-        removeContainer.style.display = 'block';
-    }
-}
+ function toggleMenu() {
+    var navContainer = document.getElementById('navContainer');
+    navContainer.classList.toggle('hidden')
+  }
 
 ### Continued development
 
