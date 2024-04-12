@@ -13,24 +13,28 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
   }
-  
+  .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   button:hover {
     background-color: #0056b3;
   }
   .navContainer .navList .ulList{
     height: 225px;
-    width: 85%;
     top: 40px;
+    right: 0rem;
     display: flex;
     flex-direction: column;
-    right: 0rem;
     background-color: hsl(0, 0%, 100%);
-    margin: 5rem 2rem 0rem 0rem;
-    justify-content: flex-start;
+    margin-top: 5rem;
+    margin-inline-end: 2rem;
+    margin-inline-start: 2rem;
+    justify-content: center;
     align-items: center;
-    position: fixed;
     padding: 20px 0 0 0px;
     list-style: none;
     border-radius: 10px;
