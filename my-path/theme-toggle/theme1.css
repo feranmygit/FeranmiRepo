@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-inline-end: 1rem;
     margin-inline-start: 1rem;
     justify-content: center;
