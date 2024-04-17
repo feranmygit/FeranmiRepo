@@ -303,9 +303,9 @@ button.items:nth-child(6){
   display: none;
   cursor: pointer;
 }
-/* #overlay.active {
+#overlay.active {
   display: block;
-} */
+}
 .show{
   display: block;
 }
@@ -367,10 +367,6 @@ button.items:nth-child(6){
         z-index: 3;
         overflow: hidden;
     }
-    .section_two{
-        z-index: -3;
-        position: relative;
-    }
     .imgContainer{
         position: absolute;
         background-image: url(./images/bg-intro-desktop.svg);
@@ -387,10 +383,12 @@ button.items:nth-child(6){
         top: 0px;
         right: -5%;
         height: 102%;
-        z-index: 1;
+        z-index: -1;
     }
     .sectionDivOne{
         width: 50%;
+        z-index: 10;
+        position: relative;
     }
     .headOne {
         text-align: start;
@@ -503,7 +501,7 @@ button.items:nth-child(6){
       transform: translate(-50%, -50%);
       width: 90%;
       gap: 0rem;
-      box-shadow: 0 300rem 0 300.6rem rgba(0, 0, 0, 0.6);
+      /* box-shadow: 0 300rem 0 300.6rem rgba(0, 0, 0, 0.6); */
       cursor: pointer;
     }
     #navContainer > li:nth-child(1) {
@@ -552,6 +550,8 @@ button.items:nth-child(6){
     }
     .sectionDivOne{
         width: initial;
+        z-index: 0;
+        position: inherit;
     }
     .headOne {
         text-align: center;
