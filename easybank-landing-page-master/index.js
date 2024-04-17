@@ -6,7 +6,32 @@ document.querySelector('.hamburger-icon').addEventListener('click', function() {
     }
   });
   
-  function toggleMenu() {
+ function toggleMenu() {
     var navContainer = document.getElementById('navContainer');
-    navContainer.classList.toggle('hidden')
+    var overlay = document.getElementById('overlay');
+    // var overlay = document.getElementById('overlay');
+
+    navContainer.classList.toggle('hidden');
+    overlay.classList.toggle('show');
+    // overlay.classList.toggle('hidden');
   }
+
+
+
+  
+//   function closeMenu() {
+//     var navContainer = document.getElementById('navContainer');
+//     // var overlay = document.getElementById('overlay');
+
+//     navContainer.classList.add('hidden');
+//     // overlay.classList.add('hidden');
+//     document.body.classList.remove('active');
+//   }
+//   document.querySelector(".overlay").addEventListener("click",
+// function() {
+
+// })
+
+
+
+

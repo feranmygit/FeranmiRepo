@@ -15,19 +15,21 @@
     <header class="headerContainer" id="classic">
       
       <div class="logoContainer"><img src="./images/logo.svg" alt="" class="imgLogo"></div>
+      
       <input type="checkbox" name="input" id="input">
       <label for="input" id="hambuggerContainer">
-        <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
           <!-- Hamburger menu icon -->
           <div class="hamburger-icon" ><div class="middle-line"></div></div>
-        </div>
+        </div>  
       </label>
-        <div class="navContainer " >
-          <nav class="navList">
-            <ul class="ulList hidden" id="navContainer">
-              <li class="items" id="fitems"><a  href="">Home</li></a>
-              <li class="items"><a href="">About</li></a>
-              <li class="items"><a href="">Contact</li></a>
+
+      <div class="navContainer " >
+        <nav class="navList">
+          <ul class="ulList hidden" id="navContainer">
+            <li class="items" id="fitems"><a  href="">Home</li></a>
+            <li class="items"><a href="">About</li></a>
+            <li class="items"><a href="">Contact</li></a>
               <li class="items"><a href="">Blog</li></a>
               <li class="items"><a href="">Careers</li></a>
             </ul>
@@ -35,9 +37,15 @@
         </div>
         <div class="bttn" id="close-btn"><button class="items" id="btn">Request Invite</button></div>
       </header> 
+      <!-- <label for="input" id="hambuggerContainer">
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      </label>
+    -->
+  
+    
+    
 
-    
-    
+      
     <main class="mainContainer">
       <div class="divSectionOne">
         <div class="upSect">
@@ -55,7 +63,8 @@
                   <div class="bttn"><button class="items" id="btn">Request Invite</button></div>
               </div>
             </section>
-          
+
+       
          
           <section class="section_two">
           <div class="sectionDivtwo">
@@ -140,7 +149,7 @@
           </div>
         </section>
       </div>
-
+      
       <footer class="sectionFour" id="classic">
         <div class="footerOne">
           <div class="footerLogo"><img src="./images/logo.svg" alt=""></div>
@@ -153,6 +162,7 @@
           </div>
         </div>
 
+      
         <div class="internalLinks">
           <div class="linksMedium">
             <div class="aboutUs"><a href="">About Us</div></a>
