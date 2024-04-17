@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <style>
+        #hamburger {
+          display: block;
+          width: 25px;
+          height: 25px;
+          background: #ffffff;
+          margin: auto;
+          z-index: 1000;
+        }
+        #hamburger span {
+          display: block;
+          width: 50px;
+          height: 2px;
+          background: #f3f0;
+          margin: 0px 0;
+          z-index: 1000;
+          
+        }
+        #navContainer {
+          display: none;
+        }
+        .overlay {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.5);
+          display: none;
+          z-index: -1;
+        }
+        </style>
+        
+        
+        
+        <label for="input" id="hambuggerContainer">
+          <div class="hamburger-menu"  onclick="toggleMenu()">
+            <!-- Hamburger menu icon -->
+            <div class="hamburger-icon" id="hamburger"><div class="middle-line"></div></div>
+            
+        </label>
+        
+        <div class="navContainer " >
+          <nav class="navList">
+            <ul class="ulList hidden" id="navContainer">
+              <li class="items" id="fitems"><a  href="">Home</li></a>
+              <li class="items"><a href="">About</li></a>
+              <li class="items"><a href="">Contact</li></a>
+                <li class="items"><a href="">Blog</li></a>
+                <li class="items"><a href="">Careers</li></a>
+              </ul>
+            </nav>
+          </div>
+
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+       
+        <div>
+          <div class="overlay" id="overlay"></div>
+          </div>
+        
+        
+        
+        
+        <script>
+        document.getElementById("overlay").addEventListener("click", toggle);
+        function toggle() {
+          if (document.getElementById("navContainer").style.display === "none") {
+            document.getElementById("navContainer").style.display = "block";
+            document.getElementById("hamburger").innerHTML =    document.querySelector('.hamburger-icon').addEventListener('click', function() {
+    this.classList.toggle('open');
+    const middleLine = this.querySelector('.middle-line');
+    if (middleLine) {
+      middleLine.classList.toggle('hidden');
+    }
+  });
+            document.querySelector(".overlay").style.display = "block";
+        
+        } else {
+            document.getElementById("navContainer").style.display = "none";
+            document.getElementById("hamburger").innerHTML = "☰";
+            document.querySelector(".overlay").style.display = "none";
+          }
+        }
+        document.querySelector(".overlay").addEventListener("click", function() {
+          document.querySelector(".overlay").style.display = "none";
+          document.getElementById("hamburger").innerHTML = "☰";
+        });
+
+
+        document.getElementById("hamburger").addEventListener("click", toggle);
+        function toggle() {
+          if (document.getElementById("navContainer").style.display === "none") {
+            document.getElementById("navContainer").style.display = "block";
+            document.getElementById("hamburger").innerHTML = "✕";
+            document.querySelector(".overlay").style.display = "block";
+        
+        } else {
+            document.getElementById("navContainer").style.display = "none";
+            document.getElementById("hamburger").innerHTML = "☰";
+            document.querySelector(".overlay").style.display = "none";
+          }
+        }
+        document.querySelector(".overlay").addEventListener("click", function() {
+          document.querySelector(".overlay").style.display = "none";
+          document.getElementById("hamburger").innerHTML = "☰";
+        });
+
+
+
+
+
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+    this.classList.toggle('open');
+    const middleLine = this.querySelector('.middle-line');
+    if (middleLine) {
+      middleLine.classList.toggle('hidden');
+    }
+  });
+  
+        </script>
+</body>
+</html>

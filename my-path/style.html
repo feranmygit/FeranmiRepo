@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+</head>
+<body>
+    <style>
+        /* Hamburger styles */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+/* Hidden container styles */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1001;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Overlay styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Ensure overlay appears above other content */
+  display: none; /* Initially hidden */
+}
+
+
+    </style>
+  <!-- Hamburger icon -->
+
+
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  
+  <!-- Hidden container -->
+  <div class="container hidden" id="menu">
+    <!-- Content of the hidden container goes here -->
+    <p>This is the hidden container.</p>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+  var menu = document.getElementById('menu');
+  var overlay = document.getElementById('overlay');
+  var isActive = menu.classList.contains('hidden');
+  
+  // Toggle menu visibility
+  menu.classList.toggle('hidden');
+  
+  // Toggle overlay visibility and background color
+  overlay.classList.toggle('hidden');
+  
+  // Change hamburger to remove sign when menu is active
+  var hamburger = document.querySelector('.hamburger');
+  hamburger.classList.toggle('active', !isActive);
+}
+
+function closeMenu() {
+  var menu = document.getElementById('menu');
+  var overlay = document.getElementById('overlay');
+  
+  // Hide menu
+  menu.classList.add('hidden');
+  
+  // Hide overlay
+  overlay.classList.add('hidden');
+  
+  // Change remove sign back to hamburger
+  var hamburger = document.querySelector('.hamburger');
+  hamburger.classList.remove('active');
+}
+  </script>
+</body>
+</html>
+ 
+
+
+
+
+

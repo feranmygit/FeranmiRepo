@@ -26,10 +26,7 @@ body{
     top: 0;
     z-index: 10000;
     background-color: hsl(0, 0%, 100%);
-}
-.mainContainer{
-  z-index: -1000;
-}
+  }
 #input{
     display: none;
 }
@@ -40,6 +37,7 @@ body{
   z-index: 1000; 
   cursor: pointer;
 }
+/*  */
 .hamburger-icon {
   width: 30px;
   height: 20px;
@@ -96,7 +94,6 @@ body{
   background-color: #fff;
   width:90%;
   border-radius: 5px;
-  box-shadow: 0px 299.4rem 0px 300rem rgba(0, 0, 0, 0.6);
   z-index: 1000;
 }
 .hidden{
@@ -104,6 +101,7 @@ body{
 }
 .items {
   padding-bottom: 1rem;
+  font-weight: 700;
 }
 #navContainer > li:nth-child(1){
   padding-top: 1rem;
@@ -293,6 +291,23 @@ button.items:nth-child(6){
     right: -5%;
     height: 100%;
 }
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+}
+/* #overlay.active {
+  display: block;
+} */
+.show{
+  display: block;
+}
 
 @media only screen and (max-width: 1440px) {
     #classic {
@@ -333,7 +348,7 @@ button.items:nth-child(6){
       padding-bottom: 2rem;
     }
       #hide{
-        z-index: 10;
+        z-index: 1;
         margin-top: 3rem;
       }
       .headerContainer{
@@ -466,9 +481,6 @@ button.items:nth-child(6){
         z-index: 10000;
         background-color: white;
     }
-    .mainContainer{
-      z-index: ;
-    }
     #classic > div.logoContainer > img{
       padding-top: 0px;
       position: sticky;
@@ -485,12 +497,13 @@ button.items:nth-child(6){
     .ulList{
       flex-direction: column;
       height: 30vh;
-      top: 24%;
+      top: 24.5%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 90%;
-      box-shadow: 0px 299.4rem 0px 300rem rgba(0, 0, 0, 0.6);
       gap: 0rem;
+      box-shadow: 0 300rem 0 300.6rem rgba(0, 0, 0, 0.6);
+      cursor: pointer;
     }
     #navContainer > li:nth-child(1) {
        padding-top: 1rem; 
@@ -534,6 +547,7 @@ button.items:nth-child(6){
     }
     #hide{
       margin-top: -3rem;
+      z-index: 0;
     }
     .sectionDivOne{
         width: initial;
