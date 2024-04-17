@@ -88,8 +88,9 @@ body{
   margin: 0rem;
   height: 30vh;
   position: fixed;
-  top: 26%;
+  top: auto;
   left: 50%;
+  bottom: 74%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   width:90%;
