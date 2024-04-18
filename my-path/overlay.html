@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    
+    /* Menu container styles */
+    .menu-container {
+      position: relative;
+    }
+    
+    /* Menu styles */
+    .menu {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -200px; /* Initially off-screen */
+      width: 200px;
+      height: 100vh;
+      background-color: green;
+      padding-top: 50px; /* Adjust this value to align the menu items */
+      transition: left 0.3s ease-in-out;
+      z-index: 1000;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .menu ul li {
+      padding: 10px;
+    }
+    
+    .menu ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    #menu > ul{
+        background-color: green;
+    }
+    
+    /* Hamburger styles */
+    /* .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+    }
+    
+    .hamburger span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #f10000;
+      margin-bottom: 5px;
+    } */
+    
+    /* Overlay styles */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none; /* Initially hidden */
+    }
+
+
+
+
+
+    .hamburger-icon {
+  width: 30px;
+  height: 20px;
+  background-color: #fff; 
+  position: relative;
+  z-index: 1000;
+}
+.middle-line {
+  width: 30px;
+  background-color: #333; 
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #333; 
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.hamburger-icon::before {
+  top: 0;
+}
+.hamburger-icon::after {
+  bottom: 0;
+}
+.hamburger-icon.open::before {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger-icon.open::after {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.hamburger-icon.open .middle-line {
+  opacity: 0; 
+}
+    </style>
+
+
+
+
+<div class="menu-container" id="menu-container">
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <div class="hamburger-menu" id="hamburger" onclick="toggleNav()">
+    <!-- Hamburger menu icon -->
+    <div class="hamburger-icon" ><div class="middle-line"></div></div>
+  </div>
+
+
+  <!-- <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div> -->
+
+<div class="overlay" id="overlay" onclick="toggleNav()"></div>
+ 
+<script>
+
+    // Function to toggle menu visibility
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var overlay = document.getElementById('overlay');
+      
+      // Toggle menu visibility by changing left position
+      menu.style.left = (menu.style.left === '0px') ? '-200px' : '0px';
+      
+      // Toggle overlay visibility
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    }
+    
+    // Event listener for clicks on the hamburger icon
+    document.getElementById('hamburger').addEventListener('click', toggleMenu);
+    
+    // Event listener for clicks on the overlay
+    document.getElementById('overlay').addEventListener('click', toggleMenu);
+
+
+
+
+    document.querySelector('.hamburger-icon, .overlay').addEventListener('click', function() {
+    this.classList.toggle('open');
+    const middleLine = this.querySelector('.middle-line');
+    if (middleLine) {
+      middleLine.classList.toggle('hidden');
+    }
+  });
+  
+ function toggleNav() {
+    var navContainer = document.getElementById('navContainer');
+    var overlay = document.getElementById('overlay');
+    // var overlay = document.getElementById('overlay');
+
+    navContainer.classList.toggle('hidden');
+    overlay.classList.toggle('show');
+    // overlay.classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>

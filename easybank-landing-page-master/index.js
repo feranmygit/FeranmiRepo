@@ -9,28 +9,29 @@ document.querySelector('.hamburger-icon').addEventListener('click', function() {
  function toggleMenu() {
     var navContainer = document.getElementById('navContainer');
     var overlay = document.getElementById('overlay');
-    // var overlay = document.getElementById('overlay');
+    var hamburgericon = document.getElementById('hamburger-icon');
+    var overlay = document.getElementById('overlay');
 
     navContainer.classList.toggle('hidden');
     overlay.classList.toggle('show');
+    hamburgericon.classList.toggle('hidden');
     // overlay.classList.toggle('hidden');
   }
 
 
 
   
-//   function closeMenu() {
-//     var navContainer = document.getElementById('navContainer');
-//     // var overlay = document.getElementById('overlay');
+  // function closeMenu() {
+  //   var navContainer = document.getElementById('navContainer');
+  //   var overlay = document.getElementById('overlay');
+  //   var hamburgericon = document.getElementById('hamburger-icon');
 
-//     navContainer.classList.add('hidden');
-//     // overlay.classList.add('hidden');
-//     document.body.classList.remove('active');
-//   }
-//   document.querySelector(".overlay").addEventListener("click",
-// function() {
 
-// })
+  //   navContainer.classList.add('hidden');
+  //   overlay.classList.add('show');
+  //   hamburgericon.classList.add('hidden');
+  //   document.body.classList.remove('active');
+  // }
 
 
 
