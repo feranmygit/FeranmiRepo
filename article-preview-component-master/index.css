@@ -174,9 +174,9 @@ body{
         width: 90%;
     }
     .bottom-share{
-        width: 45%;
-        right: -10px;
-        bottom: 120px;
+        width: 40%;
+        right: -20px;
+        bottom: 110px;
     }
  
 }
@@ -206,7 +206,7 @@ body{
 }
 
 
-@media only screen and (max-width: 998px){
+@media only screen and (max-width: 908px){
     .wrapper-contaniner {
         width: 90%;
     }
