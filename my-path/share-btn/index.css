@@ -36,7 +36,7 @@
     position: relative;
     width: 200px;
     height: 200px;
-    opacity: 0; /* Initially hidden */
+    opacity: 1; /* Initially hidden */
     transition: opacity 1s ease;
   }
   .container:hover {
