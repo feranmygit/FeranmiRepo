@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 2rem;
+    }
+     .rounded-corner{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+     }
+     .corner-text{
+      text-align: center;
+      font-size: 50px;
+     }
+     .corner-shape{
+      height: 200px;
+      width: 200px;
+      border: 2px solid red;
+      border-radius: 10px;
+     }
+     .corner-shapes{
+      height: 200px;
+      width: 200px;
+      border: 2px solid rgb(17, 0, 255);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+     }
+  </style>
 </head>
 <body>
-    <style>
-          
-      .container {
-        width: 100px;
-        height: 100px;
-        background-color: #ccc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      }
-      
-      .hamburger-icon {
-        width: 30px;
-        height: 20px;
-        position: relative;
-      }
-      
-      .line {
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        position: absolute;
-        left: 0;
-        transition: transform 0.3s ease-in-out;
-      }
-      
-      .middle-line {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    </style>
-
-
-
-    <div class="container" id="container">
-        <div class="hamburger-icon">
-          <div class="line"></div>
-          <div class="line middle-line"></div>
-          <div class="line"></div>
-        </div>
-      </div>
-      
-      
-      
-      
-    
-      
-      
-      <script>
-          document.getElementById('container').addEventListener('click', function() {
-            this.classList.toggle('open');
-            var hamburgerIcon = document.querySelector('.hamburger-icon');
-            if (hamburgerIcon.classList.contains('open')) {
-              hamburgerIcon.classList.remove('open');
-              var middleLine = hamburgerIcon.querySelector('.middle-line');
-              if (middleLine) {
-                middleLine.classList.remove('hidden');
-              }
-            }
-          });
-
-      </script>
+  <div class="rounded-corner">
+    <div class="corner">
+      <h3 class="corner-text">Rounded Corners</h3>
+      <p class="par-text">This involves differrent boxes of container having a specific corners shape</p>
+    </div>
+    <div class="corner-shape"></div>
+  </div>
+  <div class="rounded-corner">
+    <div class="corner">
+      <h3 class="corner-text">Customised colors</h3>
+      <p class="par-text">This involves differrent boxes of container having a specific colors around it</p>
+    </div>
+    <div class="corner-shapes"></div>
+  </div>
 </body>
 </html>
