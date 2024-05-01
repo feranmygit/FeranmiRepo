@@ -43,9 +43,6 @@ body{
   position: relative;
   transition: background-color 0.5s ease;
 }
-html{
-  scroll-behavior: smooth;
-}
 .dark-mode{
   background-color: hsl(230, 17%, 14%);
   transition: 0.5s ease;
