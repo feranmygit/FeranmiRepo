@@ -63,7 +63,7 @@ body{
     top: 0;
     right: -300px;
     background-color: hsl(255, 32%, 20%);
-    z-index: 1;
+    z-index: 5;
     width: 250px;
     margin: 0;
     height: 100vh;
@@ -100,7 +100,7 @@ li a span{
     margin-top: 6rem;
 }
 .remove-element{
-    z-index: 10;
+    z-index: 1;
     position: absolute;
     display: none;
 }
