@@ -3,8 +3,7 @@ body{
     margin: 0;
 }
 #auto-spacing{
-    margin-inline-start: 1.5rem;
-    margin-inline-end: 1.5rem;
+    margin-inline: 1.5rem;
 }
 .main-wrapper{
     background-image: url(./assets/home/background-home-mobile.jpg);
@@ -18,21 +17,24 @@ body{
     align-items: center;
     padding-top: 2rem;
     padding-block-end: 3rem;
+    position: relative;
 }
 #input{
     display: none;
 }
 .hamburger-wrapper{
-    position: relative;
     width: 50px;
-    margin-top: -3px;
+    top: 40%;
+    transform: translateY(-40%);
+    right: 0;
+    position: absolute;
 }
 .hamburger-icon{
-    position: absolute;
+    position: relative;
     display: inline-block;
     width: 100%;
     height: 5px;
-    background-color: hsl(255, 100%, 100%);
+    background-color: #e1e5ee;
     border-radius: 10px;
 }
 .hamburger-icon::before{
@@ -41,8 +43,8 @@ body{
     display: inline-block;
     width: 100%;
     height: 5px;
-    top: -10px;
-    background-color: hsl(255, 100%, 100%);
+    top: -15px;
+    background-color: #e1e5ee;
     border-radius: 10px;
 }
 .hamburger-icon::after{
@@ -50,27 +52,64 @@ body{
     content: "";
     display: inline-block;
     width: 100%;
-    top: 10px;
+    top: 15px;
     height: 5px;
-    background-color: hsl(255, 100%, 100%);
+    background-color: #e1e5ee;
     border-radius: 10px;
 }
-.list-items{
-    display: none;
+.navbar .list-items{
     position: fixed;
     top: 0;
-    right: 0px;
-    background-color: aliceblue;
-    z-index: 1;
-    width: 300px;
+    right: -300px;
+    background-color: hsl(255, 32%, 20%);
+    z-index: 100;
+    width: 250px;
     margin: 0;
-    padding-top: 1rem;
     height: 100vh;
-    transition: right 0.5s ease;
-
+    list-style: none;
+    padding: 2rem 0 0 1.5rem;
+    transition: right 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+.navbar .list-items> li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ccdaf5;
+}
+#input:checked ~ .navbar .list-items {
+   display: block;
+   right: 0px;
+}
+.list-items li img{
+    margin-bottom: 3rem;
+}
+.list-items> li {
+    margin-block-end: 1rem;
+}
+li a span{
+    margin-inline-end: 0.7rem;
+}
+.icon-close img{
+    float: right;
+    margin-inline-end: 1.5rem;
+    margin-block-start: 1rem;
+}
+.top-space{
+    margin-top: 6rem;
+}
+.remove-element{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+.top .left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
 }
 .show{
     display: block;
-    transition: right 0.5s ease;
-
+    height: 100vh;
+    width: 100vw;
 }

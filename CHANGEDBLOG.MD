@@ -1,6 +1,4 @@
-# Dev Feranmi
-
-# Change Log.
+# [Dev_feranmi] Change Log.
 
 This will include my working projects, every single changes committed will be documented to this log.
 
