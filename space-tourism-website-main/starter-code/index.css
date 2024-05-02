@@ -1,9 +1,10 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 #auto-spacing{
-    margin-inline: 1.5rem;
+    padding-inline: 1.5rem;
 }
 .main-wrapper{
     background-image: url(./assets/home/background-home-mobile.jpg);
@@ -62,7 +63,7 @@ body{
     top: 0;
     right: -300px;
     background-color: hsl(255, 32%, 20%);
-    z-index: 100;
+    z-index: 1;
     width: 250px;
     margin: 0;
     height: 100vh;
@@ -77,6 +78,7 @@ body{
 }
 #input:checked ~ .navbar .list-items {
    display: block;
+   box-shadow: 0 100rem 0 100rem rgba(0, 0, 0, 0.6);
    right: 0px;
 }
 .list-items li img{
@@ -87,6 +89,7 @@ body{
 }
 li a span{
     margin-inline-end: 0.7rem;
+    display: none;
 }
 .icon-close img{
     float: right;
@@ -112,4 +115,45 @@ li a span{
     display: block;
     height: 100vh;
     width: 100vw;
+}
+.left-container p{
+    color: #ccdaf5;
+}
+.left-container .par{
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.left-container .par2{
+    text-align: center;
+    margin: 0;
+    line-height: 1.5rem;
+}
+.left-container h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0;
+}
+.left-cont{
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(245, 243, 242);
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    margin-top: 3rem;
+}
+.left-cont .par3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%, -45%);
+}
+.top{
+    display: grid;
 }
