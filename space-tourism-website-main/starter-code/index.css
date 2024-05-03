@@ -8,6 +8,7 @@
     --white_wt_bgc: rgb(245, 243, 242);
     --white_bluish: aliceblue;
     --very_dark_gray_white: hsl(240, 0%, 48%);
+    --very_desaturated_grayish_white: hsl(240, 0%, 40%);
     --light_gray_white: hsl(0, 0%, 73%);
     --white: #fff;
 }
@@ -17,14 +18,16 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Small';
-    /* font-family: Helvetica,Arial,sans-serif; */
+    /* font-family: 'Franklin Gothic Small'; */
+    font-family: Helvetica,Arial,sans-serif;
 }
 #auto-spacing{
     padding-inline: 1.5rem;
 }
-.main-wrapper{
+.home-wrapper{
     background-image: url(./assets/home/background-home-mobile.jpg);
+}
+.main-wrapper{
     background-position: center;
     background-size: cover;
 }
@@ -195,13 +198,19 @@ li a span{
 
    /* Destination Europa */
 
+.destination-wrapper{
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+}
+
 .page-0ne-destination{
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 15px;
     text-decoration: none;
     color: var(--white);
+   }
+   .upper-case{
+    text-transform: uppercase;
    }
 .page-0ne-destination .page-focus{
     color: var(--very_dark_gray_white);
@@ -241,15 +250,17 @@ li a span{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.euro-img {
+.image-euro {
     padding-block: 4rem;
 }
 .euro-img img{
    max-width: 100%;
 }
 .euro-par{
-    border-bottom: 1px solid var(--very_dark_gray_white);
     padding-bottom: 3rem;
+}
+.euro-border{
+    border-bottom: 1px solid var(--very_dark_gray_white);
 }
 .bottom-wrap{
     display: flex;
@@ -264,4 +275,40 @@ li a span{
 .bottom h2{
     color: var(--white);
     margin: 0;
+}
+
+/* crew page views */
+
+.crew-wrapper{
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+}
+.text-paragraph{
+ color: var(--light_gray_white);
+ margin-top: 3rem;
+ margin-bottom: 0;
+}
+.crew-header{
+    margin-bottom: 2rem;
+    font-size: 25px;
+    margin-top: 0.7rem;
+}
+.dot-container{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.dot-btn{
+    height: 5px;
+    width: 5px;
+    margin-inline: 0.3rem;
+    background-color: var(--very_desaturated_grayish_white);
+    border-radius: 100%;
+    display: inline-block;
+}
+.crew-par{
+    padding-bottom: 1rem;
+}
+.crew-active{
+    background-color: var(--white);
 }
