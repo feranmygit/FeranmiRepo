@@ -2,22 +2,8 @@
 //     document.getElementById('remove').classList.toggle('show');
 // });
 
-const crew = document.querySelectorAll('.crewbtns');
-let index = 0;
-
-function clickContainers() {
-
-    for (let i = 0; i < 4;) {
-        if (index < crew.length) {
-            crew[index].click();
-            index++;
-        } else {
-            index = 0;
-        }
-    }
-}
-setInterval(clickContainers, 2000);
-
+// const crew = document.querySelectorAll('.crewbtns');
+// let index = 0;
 
 // function toggleCrew() {
 //     crew.forEach(crew => {
@@ -25,7 +11,8 @@ setInterval(clickContainers, 2000);
 //     });
 
 //     if (index < crew.length) {
-//         crew[index].style.display = 'block', index++;
+//         crew[index].style.display = 'block';
+//         index++;
 //     } else {
 //         index = 0;
 //     }
