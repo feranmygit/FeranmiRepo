@@ -5,23 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Crew Specialist | Space tourism website</title>
 </head>
 <body>
+  <main class="main-wrapper crew-wrapper" id="auto-spacing">
+    <header class="header-wrapper-blog " >
+      <div class="logo-container">
+        <a href="./index.html"><img src="./assets/shared/logo.svg" alt="space tourism logo"></a>
+      </div>
+      
+      <input type="checkbox" id="input" name="input">
+      <label for="input">
+        <div class="hamburger-wrapper" id="hamburger">
+          <!-- hamburger-icon here -->
+          <div class="hamburger-icon"></div>
+        </div>
+      </label>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+      <nav class="navbar">
+        <ul class="list-items" id="menu-box">
+          <label for="input">
+            <li class="icon-close"><img src="./assets/shared/icon-close.svg" alt=""></li>
+          </label>
+          <li class="items-menu top-space"><a href="./index.html"><span class="link">00</span>Home</a></li>
+          <li class="items-menu"><a href="./destination-moon.html" ><span class="link">01</span>Destination</a></li>
+          <li class="items-menu"><a href="./crew-commander.html" class="active"><span class="link">02</span>Crew</a></li>
+          <li class="items-menu"><a href="./technology-capsule.html" ><span class="link">03</span>Technology</a></li>
+        </ul>
+      </nav>
+      </header>
 
-  02 Meet your crew
+      <p class="page-0ne-destination upper-case"><span class="page-focus">02</span>Meet your crew</p>
+      <p class="text-paragraph page-0ne-destination upper-case">Mission Specialist</p>
+      <h2 class="crew-header page-0ne-destination upper-case">Mark Shuttleworth</h2>
+      <p class="par2 crew-par">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+        the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+        African to travel to space as a space tourist.
+      </p>
 
-  Mission Specialist
-  Mark Shuttleworth
+      <div class="dot-container">
+        <a href="./crew-commander.html" class="crewbtns"><span class="dot-btn"></span></a>
+        <a href="./crew-engineer.html" class="crewbtns"><span class="dot-btn"></span></a>
+        <a href="./crew-pilot.html" class="crewbtns"><span class="dot-btn"></span></a>
+        <a href="./crew-specialist.html" class="crewbtns"><span class="dot-btn crew-active"></span></a>
+      </div>
 
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
+      <div class="euro-img"><img src="./assets/crew/image-mark-shuttleworth.png" alt="crew space tourisms"></div>
+  </main>
+
+
+
+  
+  
+
+  <script src="./index.js"></script>
+
 </body>
 </html>
