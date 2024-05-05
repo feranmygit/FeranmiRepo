@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Containers</title>
+<style>
+  /* CSS styles for the containers */
+  .container {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50vh); /* Initially moved to the bottom of the screen */
+    transition: opacity 0.5s, transform 0.5s; /* Transition animation */
+  }
+</style>
+</head>
+<body>
+
+<!-- Containers -->
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+<div class="container" id="container1">Container 1</div>
+<div class="container" id="container2">Container 2</div>
+<div class="container" id="container3">Container 3</div>
+
+<script>
+  // Function to check if an element is within the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to animate containers when they come into view
+  function animateContainers() {
+    const containers = document.querySelectorAll('.container');
+    containers.forEach(container => {
+      if (isInViewport(container)) {
+        container.style.opacity = 1; // Show container
+        container.style.transform = 'translateY(0)'; // Move container to its original position
+      }
+    });
+  }
+
+  // Call the animateContainers function when the page is scrolled
+  window.addEventListener('scroll', animateContainers);
+
+  // Call the animateContainers function initially to check for visible containers on page load
+  animateContainers();
+</script>
+
+</body>
+</html>
