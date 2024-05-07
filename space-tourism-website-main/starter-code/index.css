@@ -257,8 +257,9 @@ li a span{
 .euro-img img{
    max-width: 100%;
    align-items: center;
-   display: flex;
-   justify-content: center;
+   text-align: center;
+   /* display: flex;
+   justify-content: center; */
 }
 .euro-par{
     padding-bottom: 3rem;
