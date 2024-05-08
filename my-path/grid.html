@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Grid Template Areas</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+    }
+    
+    .header { grid-area: header; }
+    .sidebar { grid-area: sidebar; }
+    .main { grid-area: main; }
+    .footer { grid-area: footer; }
+  }
+  
+  @media (min-width: 769px) {
+    .container {
+      grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    }
+    
+    .header { grid-area: header; }
+    .sidebar { grid-area: sidebar; }
+    .main { grid-area: main; }
+    .footer { grid-area: footer; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="item header">Header</div>
+  <div class="item sidebar">Sidebar</div>
+  <div class="item main">Main Content</div>
+  <div class="item footer">Footer</div>
+</div>
+</body>
+</html>

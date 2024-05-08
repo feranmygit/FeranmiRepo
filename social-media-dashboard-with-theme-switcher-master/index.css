@@ -66,7 +66,32 @@ body{
   top: 0;
   border-radius: 8px 8px 0 0;
   margin-top: -2rem;
-
+}
+.effectPage{
+  padding-top: 3px;
+}
+.effectPage::before{
+  content: "";
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid hsl(163, 72%, 41%);
+  align-items: center;
+}
+.effectPage1{
+  padding-top: 1.9rem;
+}
+.effectPage1::before{
+  content: "";
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid hsl(348, 97%, 39%);
+  align-items: center;
+}
+.dailyEffects{
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  font-weight: 700;
 }
 .hero{
   display: grid;
@@ -229,16 +254,7 @@ body{
   letter-spacing: 5px;
   font-size: 13px;
 }
-.dailyEffects{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
-  text-align: center;
-  margin: 1rem 0 0.5rem 0;
-  font-weight: 700;
-}
+
 #effectPage{
   color: hsl(163, 72%, 41%);
 }
@@ -315,6 +331,7 @@ body{
   display: none;
 }
 
+
 @media only screen and (min-width: 1200px) {
   #generalSpacing{
     padding: 4rem 8rem;
@@ -333,3 +350,9 @@ body{
   background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 }  
+
+@media only screen and (min-width: 600px) {
+  .socialHeaderElement1 {
+    border-bottom: none;
+  }
+}
