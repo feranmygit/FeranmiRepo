@@ -95,7 +95,7 @@ body > header > label{
     margin: 0;
     right: -300px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: 0.3s ease;
 }
 .ulist .list{
@@ -139,14 +139,14 @@ body > header > label{
     color: hsl(236, 13%, 42%);
     line-height: 2rem;
     margin-bottom: 0.5rem;
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin-top: 0.5px;
 }
 .paragraph{
   color: hsl(236, 13%, 42%);
   line-height: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .paragraph> strong{
   color: black;
@@ -207,7 +207,7 @@ body > header > label{
 }
 .paragraph_two{
     color: hsl(236, 13%, 60%);
-    font-size: 14px;
+    font-size: 0.875rem;
     border-bottom: 1px solid hsl(236, 13%, 42%);
     padding-bottom: 2rem;
     margin-top: 0.5rem;
@@ -215,7 +215,7 @@ body > header > label{
 }
 .paragraph_three{
     color: hsl(236, 13%, 60%);
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 0.5rem;
     margin-bottom: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
