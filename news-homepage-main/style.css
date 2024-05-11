@@ -19,6 +19,7 @@ body{
 }
 .mainheader{
     display: flex;
+    justify-content: space-between;
 }
 #input{
     display: none;
@@ -123,7 +124,7 @@ body > header > label{
     height: 25px;
 }
 .image{
-    width: 100%;
+    max-width: 100%;
 }
 .header_one{
     font-weight: 800;
@@ -255,11 +256,131 @@ body > header > label{
     color: hsl(236, 13%, 42%);
 }
 .maincontainer{
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  /* gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); 
 }
-@media only screen and (max-width:1440px) {
+/* @media only screen and (max-width:1128px) {
+  .maincontainer{
+    display: grid;
+    grid-template-areas: 'header header header header right right'
+                          'menu menu main main right right'
+                          'footer1 footer1 footer2 footer2 footer3 footer3'; 
+    gap: 2rem;
+  }
+ .menu{
+    grid-area: menu;
+  }
+  .main{
+    grid-area: main;
+  }
+  #section_two{
+    grid-area: right;
+  }
+  .section_three{
+   grid-area: footer1;
+}
+  .section_four{
+   grid-area: footer2;
+}
+  .section_five{
+   grid-area: footer3;
+}
+} */
+
+@media only screen and (max-width:600px) {
+  .maincontainer{
+    display: grid;
+    grid-template-areas: 'header'
+                         'menu'
+                         'main'
+                         'right'
+                         'footer1' 
+                         'footer2'
+                         'footer3';  
+    gap: 2rem;
+  }
+  #sectionContainer{
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+  }
+ .menu{
+    grid-area: menu;
+  }
+  .main{
+    grid-area: main;
+  }
+  #section_two{
+    grid-area: right;
+  }
+  .section_three{
+   grid-area: footer1;
+}
+  .section_four{
+   grid-area: footer2;
+}
+  .section_five{
+   grid-area: footer3;
+}
+}
+
+
+@media only screen and (min-width:600px) {
+  .maincontainer{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'menu main main'
+                         'right right right'
+                         'footer1 footer1 .' 
+                         'footer2 footer2 .'
+                         'footer3 footer3 .'; 
+    gap: 2rem;
+  }
+  #sectionContainer{
+    grid-area: header;
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+ .menu{
+    grid-area: menu;
+  }
+  .main{
+    grid-area: main;
+  }
+  #section_two{
+    grid-area: right;
+  }
+  .section_three{
+   grid-area: footer1;
+}
+  .section_four{
+   grid-area: footer2;
+}
+  .section_five{
+   grid-area: footer3;
+}
+}
+@media only screen and (min-width:720px) {
+  .maincontainer{
+    display: grid;
+    grid-template-areas: 'header header header header right right'
+                          'menu menu main main right right'
+                          'footer1 footer1 footer2 footer2 footer3 footer3'; 
+  }
+
+}
+@media only screen and (min-width:1200px) {
+  body {
+      margin: 4rem 8rem;
+    }
+  }
+
+
+
+/* @media only screen and (max-width:1440px) {
     body {
         margin: 4rem 8rem;
       }
@@ -338,10 +459,10 @@ body > header > label{
     padding-bottom: 2.5rem;
     margin-top: 1rem;
   }
-}
+}*/
 
 @media only screen and (max-width:600px) {
-    body {
+   /* body {
         margin: 0.8rem;
       }
       .mainheader {
@@ -367,13 +488,8 @@ body > header > label{
       }
       .maincontainer{
         display: initial;
-      }
-      #sectionContainer{
-        background-image: url(./assets/images/image-web-3-mobile.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 280px;
-      }
+      }*/
+      /*
       .header_one {
         padding-block: 1rem;
       } 
@@ -392,5 +508,5 @@ body > header > label{
         font-size: 14px;
         padding-bottom: 2rem;
         margin-top: 0.5rem;
-      }
-}
+      }*/
+} 
