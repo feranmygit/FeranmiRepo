@@ -20,6 +20,10 @@ body{
 .mainheader{
     display: flex;
     justify-content: space-between;
+    margin-block: 2rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 1rem;
 }
 #input{
     display: none;
@@ -89,7 +93,6 @@ body > header > label{
     background-color: hsl(36, 100%, 99%);
     top: 0;
     margin: 0;
-    position: fixed;
     right: -300px;
     padding: 1.5rem 0px 0px 25px;
     font-size: 20px;
@@ -255,37 +258,16 @@ body > header > label{
     line-height: 1.4rem;
     color: hsl(236, 13%, 42%);
 }
-.maincontainer{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); 
-}
-/* @media only screen and (max-width:1128px) {
-  .maincontainer{
-    display: grid;
-    grid-template-areas: 'header header header header right right'
-                          'menu menu main main right right'
-                          'footer1 footer1 footer2 footer2 footer3 footer3'; 
-    gap: 2rem;
+
+
+
+@media only screen and (max-width:720px){
+  .navbar .ulist{
+    display: none;
+    position: fixed;
   }
- .menu{
-    grid-area: menu;
-  }
-  .main{
-    grid-area: main;
-  }
-  #section_two{
-    grid-area: right;
-  }
-  .section_three{
-   grid-area: footer1;
 }
-  .section_four{
-   grid-area: footer2;
-}
-  .section_five{
-   grid-area: footer3;
-}
-} */
+
 
 @media only screen and (max-width:600px) {
   .maincontainer{
@@ -297,7 +279,7 @@ body > header > label{
                          'footer1' 
                          'footer2'
                          'footer3';  
-    gap: 2rem;
+    gap: 0rem;
   }
   #sectionContainer{
     background-image: url(./assets/images/image-web-3-mobile.jpg);
@@ -323,6 +305,9 @@ body > header > label{
   .section_five{
    grid-area: footer3;
 }
+.navbar .ulist{
+  position: fixed;
+}
 }
 
 
@@ -335,7 +320,7 @@ body > header > label{
                          'footer1 footer1 .' 
                          'footer2 footer2 .'
                          'footer3 footer3 .'; 
-    gap: 2rem;
+    gap: 1rem;
   }
   #sectionContainer{
     grid-area: header;
@@ -363,150 +348,50 @@ body > header > label{
    grid-area: footer3;
 }
 }
+
+
 @media only screen and (min-width:720px) {
+  .maincontainer{
+    display: grid;
+    grid-template-areas: 'header header header right'
+                          'menu main main right'
+                          'footer1 footer1 footer2 footer2'
+                          'footer3 footer3 . .'; 
+    gap: 1rem;
+  }
+  #input:checked ~ .navbar .ulist {
+    display: none; 
+    right: 0;
+    box-shadow: none; 
+}
+.navbar .ulist {
+   height: 0vh;
+   width: 100%; 
+   flex-direction: row; 
+   background-color: transparent;
+} 
+.hamburger-menu {
+  display: none;
+}
+.resize {
+ display: none;
+}
+.ulist{
+  gap: 2rem;
+}
+}
+
+@media only screen and (min-width:978px) {
   .maincontainer{
     display: grid;
     grid-template-areas: 'header header header header right right'
                           'menu menu main main right right'
                           'footer1 footer1 footer2 footer2 footer3 footer3'; 
+    gap: 1rem;
   }
-
 }
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1240px) {
   body {
       margin: 4rem 8rem;
     }
   }
-
-
-
-/* @media only screen and (max-width:1440px) {
-    body {
-        margin: 4rem 8rem;
-      }
-      .mainheader {
-        margin: 1.2rem 0 2.5rem 0;
-      }
-      .navbar .ulist {
-        height: 0;
-        z-index: 0;
-        position: absolute;
-        padding: 1rem;
-        flex-direction: row;
-        gap: 3rem;
-        left: 39rem;
-        top: 4rem;
-        margin: 0;
-        right: 0rem;
-        background-color: white;
-
-      }
-      .container{
-        display: none;
-      }
-      .resize{
-        display: none;
-      }
-     .maincontainer{
-        display: grid;
-        grid-template-areas: 'header header header header right right'
-                             'menu menu main main right right'
-                             'footer1 footer1 footer2 footer2 footer3 footer3';  
-        gap: 2rem;
-      }
-      #sectionContainer{
-        grid-area: header;
-        background-image: url(./assets/images/image-web-3-desktop.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 250px;
-      }
-     .menu{
-        grid-area: menu;
-      }
-      .main{
-        grid-area: main;
-      }
-      #section_two{
-        grid-area: right;
-      }
-      .section_three{
-       grid-area: footer1;
-   }
-      .section_four{
-       grid-area: footer2;
-   }
-      .section_five{
-       grid-area: footer3;
-   }
-   #headerImage{
-    width: 100%
-   }
-   .header_one {
-    font-size: 2.8rem;
-    padding-block: 0.5rem;
-  }
-  .paragraph_one {
-    line-height: 1.5rem;
-    font-size: 17px;
-  }
-  #section_two {
-    padding: 1.5rem;
-    margin-bottom: 3.5rem;
-  }
-  .paragraph_two {
-    font-size: 15px;
-    padding-bottom: 2.5rem;
-    margin-top: 1rem;
-  }
-}*/
-
-@media only screen and (max-width:600px) {
-   /* body {
-        margin: 0.8rem;
-      }
-      .mainheader {
-        margin: 1.2rem 0px;
-      }
-      .container{
-        display: block;
-      }
-      .navbar .ulist {
-        height: 100vh;
-        z-index: 1;
-        width: 220px;
-        flex-direction: column;
-        gap: 0rem;
-        left: initial;
-        top: 0;
-        position: fixed;
-        right: -300px;
-        padding: 1.5rem 0px 0px 25px;
-      }
-      .resize{
-        display: initial;
-      }
-      .maincontainer{
-        display: initial;
-      }*/
-      /*
-      .header_one {
-        padding-block: 1rem;
-      } 
-      #head-id-container{
-        margin: 0 1rem;
-      }
-      .paragraph_one {
-        line-height: 1.5rem;
-        font-size: 15px;
-      }
-      #section_two {
-        padding: 1rem;
-        margin-bottom: 3.2rem;
-      }
-      .paragraph_two {
-        font-size: 14px;
-        padding-bottom: 2rem;
-        margin-top: 0.5rem;
-      }*/
-} 
