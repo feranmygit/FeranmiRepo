@@ -93,10 +93,9 @@ body > header > label{
     background-color: hsl(36, 100%, 99%);
     top: 0;
     margin: 0;
-    right: -300px;
+    right: -600px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: 1.25rem;
-    transition: 0.3s ease;
+    font-size: 1.25rem;    /* transition: 0.3s ease; */
 }
 .ulist .list{
     margin-bottom: 1.5rem;
@@ -114,8 +113,9 @@ body > header > label{
 }
 #input:checked ~ .navbar .ulist{
     display: block;
-    right: 0;
+    right: 0px;
     box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.6);
+    transition: 0.3s ease;
 }
 #active a:visited{
   color: hsl(5, 85%, 63%);
@@ -261,9 +261,8 @@ body > header > label{
 
 
 
-@media only screen and (max-width:720px){
+@media only screen and (max-width:719px){
   .navbar .ulist{
-    display: none;
     position: fixed;
   }
 }
@@ -307,6 +306,7 @@ body > header > label{
 }
 .navbar .ulist{
   position: fixed;
+  transition: 0.3s ease;
 }
 }
 
@@ -362,6 +362,7 @@ body > header > label{
   #input:checked ~ .navbar .ulist {
     display: none; 
     right: 0;
+    height: 0;
     box-shadow: none; 
 }
 .navbar .ulist {
