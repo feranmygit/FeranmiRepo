@@ -135,7 +135,7 @@ body > header > label{
 .header_one{
     font-weight: 800;
     line-height: 3rem;
-    font-size: clamp(2rem, 2vw, 3.5rem);    
+    font-size: clamp(3rem, 2vw, 6rem);    
     margin: 0px;   
     padding-block: 1rem;
 }
@@ -407,7 +407,7 @@ body > header > label{
     gap: 1rem;
   }
 }
-@media only screen and (min-width:1240px) {
+@media only screen and (min-width:1298px) {
   body {
       margin: 4rem 8rem;
     }
