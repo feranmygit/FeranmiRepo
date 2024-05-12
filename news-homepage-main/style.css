@@ -95,12 +95,11 @@ body > header > label{
     margin: 0;
     right: -600px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: clamp(1rem, 1.5vw, 1.8rem);    
+    font-size: clamp(1.5rem, 1.5vw, 1.8rem);    
     -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 .ulist .list{
     margin-bottom: 1.5rem;
-    font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
 }
 .ulist a{
@@ -121,11 +120,17 @@ body > header > label{
 #active a:visited{
   color: hsl(5, 85%, 63%);
 }
+.close{
+  position: relative;
+}
 .resize{
-    margin-left: 10.5rem;
-    margin-bottom: 3rem;
+    position: absolute;
+    right: 1rem;
     cursor: pointer;
     height: 25px;
+}
+.spacing-bar{
+  margin-top: 7rem;
 }
 .image{
     max-width: 100%;
@@ -141,7 +146,7 @@ body > header > label{
     color: hsl(236, 13%, 42%);
     line-height: 2rem;
     margin-bottom: 0.5rem;
-    font-size: clamp(1rem, 1.5vw, 1.8rem);    
+    font-size: clamp(1rem, 2vw, 1.5rem);    
     -webkit-font-size: clamp(0.5rem, 2vw, 1.8rem);
     margin-top: 0.5px;
 }
@@ -248,8 +253,8 @@ body > header > label{
 }
 .header_four{
     padding-bottom: 0.6rem;
-    font-size: clamp(1.2rem, 1.5vw, 1.8rem);    
-    -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-size: clamp(1rem, 1.5vw, 1.8rem);    
+    -webkit-font-size: clamp(1rem, 2vw, 1.8rem);
     color: hsl(240, 100%, 5%);
 }
 .header_four a{
