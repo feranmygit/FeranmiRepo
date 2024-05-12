@@ -378,6 +378,9 @@ body > header > label{
     height: 0;
     box-shadow: none; 
 }
+.spacing-bar{
+  margin-top: 0rem;
+}
 .navbar .ulist {
    height: 0vh;
    width: 100%; 
