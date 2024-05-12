@@ -95,7 +95,7 @@ body > header > label{
     margin: 0;
     right: -600px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: clamp(1.5rem, 1.5vw, 1.8rem);    
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);    
     -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 .ulist .list{
@@ -112,7 +112,6 @@ body > header > label{
     opacity: 0.5;
 }
 #input:checked ~ .navbar .ulist{
-    display: block;
     right: 0px;
     box-shadow: 0 0 300rem 350rem rgb(0, 0, 0, 0.6);
     transition: 0.3s ease;
@@ -120,17 +119,15 @@ body > header > label{
 #active a:visited{
   color: hsl(5, 85%, 63%);
 }
-.close{
-  position: relative;
-}
 .resize{
-    position: absolute;
+   position: absolute;
     right: 1rem;
+    top: 2.2rem;
     cursor: pointer;
     height: 25px;
 }
 .spacing-bar{
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .image{
     max-width: 100%;
