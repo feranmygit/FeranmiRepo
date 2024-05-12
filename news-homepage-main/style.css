@@ -134,9 +134,9 @@ body > header > label{
 }
 .header_one{
     font-weight: 800;
-    line-height: 3rem;
+    line-height: 3.5rem;
     font-size: clamp(3rem, 2vw, 6rem);    
-    margin: 0px;   
+    margin: 1.5rem 0 0 0;   
     padding-block: 1rem;
 }
 .paragraph_one{
