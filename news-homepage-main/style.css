@@ -250,7 +250,7 @@ body > header > label{
 }
 .header_four{
     padding-bottom: 0.6rem;
-    font-size: clamp(1rem, 1.5vw, 1.8rem);    
+    font-size: clamp(1rem, 1.5vw, 1.4rem);    
     -webkit-font-size: clamp(1rem, 2vw, 1.8rem);
     color: hsl(240, 100%, 5%);
 }
