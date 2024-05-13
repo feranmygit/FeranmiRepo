@@ -95,7 +95,7 @@ body > header > label{
     margin: 0;
     right: -600px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: clamp(1.2rem, 1.5vw, 1.8rem);    
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);    
     -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 .ulist .list{
@@ -135,7 +135,7 @@ body > header > label{
 .header_one{
     font-weight: 800;
     line-height: 3.5rem;
-    font-size: clamp(3rem, 2vw, 6rem);    
+    font-size: clamp(2.8rem, 2vw, 6rem);    
     margin: 1.5rem 0 0 0;   
     padding-block: 1rem;
 }
@@ -143,7 +143,7 @@ body > header > label{
     color: hsl(236, 13%, 42%);
     line-height: 2rem;
     margin-bottom: 0.5rem;
-    font-size: clamp(1rem, 2vw, 1.5rem);    
+    font-size: clamp(1rem, 2vw, 1.1rem);    
     -webkit-font-size: clamp(0.5rem, 2vw, 1.8rem);
     margin-top: 0.5px;
 }
@@ -215,7 +215,7 @@ body > header > label{
 }
 .paragraph_two{
     color: hsl(236, 13%, 60%);
-    font-size: clamp(0.8rem, 1.5vw, 1.8rem);    
+    font-size: clamp(0.8rem, 1.5vw, 1rem);    
     -webkit-font-size: clamp(0.8rem, 2vw, 1.8rem);
     border-bottom: 1px solid hsl(236, 13%, 42%);
     padding-bottom: 2rem;
@@ -223,7 +223,7 @@ body > header > label{
 }
 .paragraph_three{
     color: hsl(236, 13%, 60%);
-    font-size: clamp(0.8rem, 1.5vw, 1.8rem);    
+    font-size: clamp(0.8rem, 1.5vw, 1rem);    
     -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
     margin-top: 0.5rem;
     margin-bottom: 0px;
