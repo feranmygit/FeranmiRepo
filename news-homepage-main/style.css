@@ -95,8 +95,6 @@ body > header > label{
     margin: 0;
     right: -600px;
     padding: 1.5rem 0px 0px 25px;
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);    
-    -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 .ulist .list{
     margin-bottom: 1.5rem;
@@ -197,7 +195,7 @@ body > header > label{
 .header_two{
     color: hsl(35, 77%, 62%);
     margin: 0px;
-    font-size: clamp(1.5rem, 1.5vw, 2rem);    
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);    
 }
 .sub_header_one{
     color: hsl(36, 100%, 99%);
@@ -274,6 +272,7 @@ body > header > label{
 @media only screen and (max-width:719px){
   .navbar .ulist{
     position: fixed;
+    font-size: clamp(1rem, 1.5vw, 1rem);    
   }
 }
 
@@ -316,7 +315,7 @@ body > header > label{
 }
 .navbar .ulist{
   position: fixed;
-  transition: 0.3s ease;
+  transition: 0.3s ease;    
 }
 }
 
@@ -386,6 +385,9 @@ body > header > label{
    width: 100%; 
    flex-direction: row; 
    background-color: transparent;
+   font-size: clamp(1rem, 1.5vw, 1.4rem);    
+    -webkit-font-size: clamp(1.2rem, 2vw, 1.8rem);
+    padding: 1rem 0;
 } 
 .hamburger-menu {
   display: none;
