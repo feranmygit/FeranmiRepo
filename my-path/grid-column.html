@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column</title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+         .grid-wrap{
+            background-color: skyblue;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-size: clamp(1.2rem, 2.5vw, 2rem);
+            font-weight: 800;
+        }
+        .wrapper{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+                padding: 2rem;
+        }
+        .wrap1{
+                grid-area: wrap1;
+            }
+            .wrap2{
+                grid-area: wrap2;
+            }
+            .wrap3{
+                grid-area: wrap3;
+            }
+            .wrap4{
+                grid-area: wrap4;
+            }
+            .wrap5{
+                grid-area: wrap5;
+            }
+            .wrap6{
+                grid-area: wrap6;
+            }
+            .wrap7{
+                grid-area: wrap7;
+            }
+            .wrap8{
+                grid-area: wrap8;
+            }
+            .wrap9{
+                grid-area: wrap9;
+            }
+   
+        @media (max-width:568px) {
+            .wrapper{
+                grid-template-areas: "wrap1"
+                                    "wrap2" 
+                                    "wrap3" 
+                                    "wrap4" 
+                                    "wrap5" 
+                                    "wrap6" 
+                                    "wrap7" 
+                                    "wrap8" 
+                                    "wrap9" 
+                                     
+
+            }
+            .grid-wrap:nth-child(1){
+                background-color: red;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+
+        @media (min-width:569px) {
+            .wrapper{
+                grid-template-areas: "wrap1 wrap1"
+                                     "wrap2 wrap3"
+                                     "wrap4 wrap5"
+                                     "wrap6 wrap7"
+                                     "wrap8 wrap9";
+
+            }
+            
+
+            .grid-wrap:nth-child(1){
+                background-color: green;
+            }
+        }
+        @media (min-width:992px) {
+            .wrapper{
+                grid-template-areas: "wrap1 wrap2 wrap3"
+                                     "wrap1 wrap4 wrap5"
+                                     "wrap6 wrap7 wrap8"
+                                     "wrap9 . .";
+
+            }
+
+            .grid-wrap:nth-child(1){
+                background-color: blue;
+                /* grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2; */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="grid-wrap wrap1">1</div>
+        <div class="grid-wrap wrap2">2</div>
+        <div class="grid-wrap wrap3">3</div>
+        <div class="grid-wrap wrap4">4</div>
+        <div class="grid-wrap wrap5">5</div>
+        <div class="grid-wrap wrap6">6</div>
+        <div class="grid-wrap wrap7">7</div>
+        <div class="grid-wrap wrap8">8</div>
+        <div class="grid-wrap wrap9">9</div>
+    </div>
+</body>
+</html>

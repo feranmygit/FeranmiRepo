@@ -133,7 +133,7 @@ body > header > label{
 .header_one{
     font-weight: 800;
     line-height: 3.5rem;
-    font-size: clamp(2.8rem, 2vw, 6rem);    
+    font-size: clamp(2.7rem, 2vw, 6rem);    
     margin: 1.5rem 0 0 0;   
     padding-block: 1rem;
 }
