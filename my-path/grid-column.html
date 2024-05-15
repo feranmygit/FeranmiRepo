@@ -8,6 +8,7 @@
 
     <style>
         body{
+            box-sizing: border-box;
             margin: 0;
         }
          .grid-wrap{
@@ -23,7 +24,12 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                 gap: 10px;
-                padding: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                width: 95%;
+                margin: 0;
+                padding-left: 2.5%;
         }
         .wrap1{
                 grid-area: wrap1;
@@ -102,10 +108,17 @@
 
             .grid-wrap:nth-child(1){
                 background-color: blue;
-                /* grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2; */
+               
+            }
+        }
+        @media (min-width:1200px) {
+                .wrapper{
+                    width: 85%;
+                    padding: 7.5%;
+                }
+            .grid-wrap:nth-child(1){
+                background-color: rgb(255, 0, 234);
+               
             }
         }
     </style>
