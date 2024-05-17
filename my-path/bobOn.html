@@ -6,19 +6,33 @@
     <title>bob-pop</title>
 
     <style>
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
         #boom{
             width: 100px;
+            margin-block: 1rem;
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <button onclick="bobOn()" id="bobOn">
+        <button id="bobOn">
             on the light
         </button>
         <img id="boom" src="/img/pic_bulboff.gif" alt="" srcset="">
 
-        <button onclick="bobOff" id="bobOff">off the light</button>
+        <button id="bobOff">off the light</button>
+
+        <p id="par"></p>
     </div>
 
     <script>
@@ -36,13 +50,20 @@
      const bobOn = document.getElementById('bobOn');
      const bobOff = document.getElementById('bobOff');
      const boom = document.getElementById('boom');
+     const par = document.getElementById('par');
 
 
      bobOn.addEventListener('click', function(){
         boom.src = '/img/pic_bulbon.gif';
+        par.innerHTML = 'welcome home';
+        par.style.fontSize = '3rem';
+        par.style.color = 'green';
      })
      bobOff.addEventListener('click', function(){
         boom.src = '/img/pic_bulboff.gif';
+        par.innerHTML = 'goodbye for Now';
+        par.style.fontSize = '3rem';
+        par.style.color = 'red';
      })
     </script>
 </body>
