@@ -7,30 +7,38 @@
 
     <style>
         .wrapper{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
+            width: 100%;
         }
         #boom{
             width: 100px;
-            margin-block: 1rem;
+        }
+        .bobShow{
+            padding: 0.7rem 1.5rem;
+            color: aliceblue;
+            border: none;
+            border-radius: 1rem;
+        }
+        .bobShow1{
+            background-color: green;
+        }
+        .bobShow2{
+            background-color: red;
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <button id="bobOn">
-            on the light
+        <button id="bobOn" class="bobShow bobShow1">
+            ON the light
         </button>
         <img id="boom" src="/img/pic_bulboff.gif" alt="" srcset="">
 
-        <button id="bobOff">off the light</button>
+        <button id="bobOff" class="bobShow bobShow2">OFF the light</button>
 
         <p id="par"></p>
     </div>
@@ -58,12 +66,17 @@
         par.innerHTML = 'welcome home';
         par.style.fontSize = '3rem';
         par.style.color = 'green';
+        bobOn.style.background = 'rgb(75, 134, 75)'
+        bobOff.style.background = 'red'
      })
      bobOff.addEventListener('click', function(){
         boom.src = '/img/pic_bulboff.gif';
         par.innerHTML = 'goodbye for Now';
         par.style.fontSize = '3rem';
         par.style.color = 'red';
+        bobOff.style.background = 'rgb(168, 116, 116)'
+        bobOn.style.background = 'green'
+
      })
     </script>
 </body>
