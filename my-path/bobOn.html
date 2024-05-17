@@ -6,6 +6,9 @@
     <title>bob-pop</title>
 
     <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         .wrapper{
             text-align: center;
             top: 50%;
@@ -22,6 +25,7 @@
             color: aliceblue;
             border: none;
             border-radius: 1rem;
+            outline: none;
         }
         .bobShow1{
             background-color: green;
@@ -63,20 +67,19 @@
 
      bobOn.addEventListener('click', function(){
         boom.src = '/img/pic_bulbon.gif';
-        par.innerHTML = 'welcome home';
+        par.innerHTML = 'Up Nepa';
         par.style.fontSize = '3rem';
         par.style.color = 'green';
-        bobOn.style.background = 'rgb(75, 134, 75)'
-        bobOff.style.background = 'red'
+        bobOn.style.background = 'rgb(75, 134, 75)';
+        bobOff.style.background = 'red';
      })
      bobOff.addEventListener('click', function(){
         boom.src = '/img/pic_bulboff.gif';
-        par.innerHTML = 'goodbye for Now';
+        par.innerHTML = 'Down Nepa';
         par.style.fontSize = '3rem';
         par.style.color = 'red';
-        bobOff.style.background = 'rgb(168, 116, 116)'
-        bobOn.style.background = 'green'
-
+        bobOff.style.background = 'rgb(168, 116, 116)';
+        bobOn.style.background = 'green';
      })
     </script>
 </body>
