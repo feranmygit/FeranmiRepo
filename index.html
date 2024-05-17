@@ -7,6 +7,9 @@
 
   <style>
     *{
+      margin: 0cqi;
+    }
+    .wrapper{
       margin: 2rem;
     }
      .rounded-corner{
@@ -14,6 +17,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 5rem;
      }
      .corner-text{
       text-align: center;
@@ -25,29 +29,64 @@
       border: 2px solid red;
       border-radius: 10px;
      }
+     .bottom{
+       margin-bottom: 19rem;
+     }
      .corner-shapes{
       height: 200px;
       width: 200px;
       border: 2px solid rgb(17, 0, 255);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-     }
+
+    }
+    .footer{
+      position: relative;
+      height: 30vh;
+      background: linear-gradient(to right,rgb(17, 0, 255), rgb(250, 6, 6) );
+      padding: 1.2rem;
+    }
+    .footer::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3.2rem;
+      background-color: rgb(250, 6, 6);
+      border-radius: 100% 100% 0 0;
+      transform: translateY(-50%);
+      background-image: linear-gradient(to right, #0501ee 50%, transparent 50%);
+      background-size: 1.2rem 8rem;
+      background-position: 0% 100%;
+    }
+     .footer::before{
+      height: 10rem;
+      background-position: 0% s1.7rem;
+    }
+  
   </style>
 </head>
 <body>
-  <div class="rounded-corner">
-    <div class="corner">
-      <h3 class="corner-text">Rounded Corners</h3>
-      <p class="par-text">This involves differrent boxes of container having a specific corners shape</p>
+  <div class="wrapper">
+    <div class="rounded-corner">
+      <div class="corner">
+        <h3 class="corner-text">Rounded Corners</h3>
+        <p class="par-text">This involves differrent boxes of container having a specific corners shape</p>
+      </div>
+      <div class="corner-shape"></div>
     </div>
-    <div class="corner-shape"></div>
-  </div>
-  <div class="rounded-corner">
-    <div class="corner">
-      <h3 class="corner-text">Customised colors</h3>
-      <p class="par-text">This involves differrent boxes of container having a specific colors around it</p>
+    <div class="rounded-corner bottom">
+      <div class="corner">
+        <h3 class="corner-text">Customised colors</h3>
+        <p class="par-text">This involves differrent boxes of container having a specific colors around it</p>
+      </div>
+      <div class="corner-shapes"></div>
     </div>
-    <div class="corner-shapes"></div>
+
   </div>
+
+
+  <div class="footer"></div>
 </body>
 </html>

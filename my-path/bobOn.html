@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bob-pop</title>
+
+    <style>
+        #boom{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button onclick="bobOn()" id="bobOn">
+            on the light
+        </button>
+        <img id="boom" src="/img/pic_bulboff.gif" alt="" srcset="">
+
+        <button onclick="bobOff" id="bobOff">off the light</button>
+    </div>
+
+    <script>
+
+        // method 1
+    //  var bobOn = document.getElementById('bobOn').addEventListener('click', function(){
+    //     document.getElementById('boom').src = '/img/pic_bulbon.gif';
+    //  })
+    //  var bobOff = document.getElementById('bobOff').addEventListener('click', function(){
+    //     document.getElementById('boom').src = '/img/pic_bulboff.gif';
+    //  })
+
+
+        // method 2
+     const bobOn = document.getElementById('bobOn');
+     const bobOff = document.getElementById('bobOff');
+     const boom = document.getElementById('boom');
+
+
+     bobOn.addEventListener('click', function(){
+        boom.src = '/img/pic_bulbon.gif';
+     })
+     bobOff.addEventListener('click', function(){
+        boom.src = '/img/pic_bulboff.gif';
+     })
+    </script>
+</body>
+</html>
