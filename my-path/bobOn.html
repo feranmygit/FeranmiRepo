@@ -52,7 +52,7 @@
         <button id="bobOn" class="bobShow bobShow1">
             ON the light
         </button>
-        <img id="boom" src="/img/pic_bulboff.gif" alt="" srcset="">
+        <img id="boom" src="./img/pic_bulboff.gif" alt="" srcset="">
 
         <button id="bobOff" class="bobShow bobShow2">OFF the light</button>
 
@@ -69,7 +69,7 @@
 
 
      bobOn.addEventListener('click', function(){
-        boom.src = '/img/pic_bulbon.gif';
+        boom.src = './img/pic_bulbon.gif';
         par.innerHTML = 'Up Nepa';
         par.style.fontSize = '3rem';
         par.style.color = 'rgb(1, 115, 1)';
@@ -77,7 +77,7 @@
         bobOff.style.background = 'red';
      })
      bobOff.addEventListener('click', function(){
-        boom.src = '/img/pic_bulboff.gif';
+        boom.src = './img/pic_bulboff.gif';
         par.innerHTML = 'Down Nepa';
         par.style.fontSize = '3rem';
         par.style.color = 'rgb(180, 3, 3)';
