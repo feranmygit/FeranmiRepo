@@ -57,6 +57,8 @@
         <button id="bobOff" class="bobShow bobShow2">OFF the light</button>
 
         <p id="par"></p>
+        <p id="par1">Click me to show alert and details</p>
+        <p id="par2"></p>
     </div>
 
     <script>
@@ -66,11 +68,19 @@
      const bobOff = document.getElementById('bobOff');
      const boom = document.getElementById('boom');
      const par = document.getElementById('par');
+     const par1 = document.getElementById('par1');
+     const par2 = document.getElementById('par2');
+     let x;
+     let y = 6;
+     let z = 9;
+     a = y+z;
+     x = 5;
+
 
 
      bobOn.addEventListener('click', function(){
         boom.src = './img/pic_bulbon.gif';
-        par.innerHTML = 'Up Nepa';
+        par.innerHTML = 'Light ON';
         par.style.fontSize = '3rem';
         par.style.color = 'rgb(1, 115, 1)';
         bobOn.style.background = 'rgb(75, 134, 75)';
@@ -78,11 +88,17 @@
      })
      bobOff.addEventListener('click', function(){
         boom.src = './img/pic_bulboff.gif';
-        par.innerHTML = 'Down Nepa';
+        par.innerHTML = 'Light OFF';
         par.style.fontSize = '3rem';
         par.style.color = 'rgb(180, 3, 3)';
         bobOff.style.background = 'rgb(168, 116, 116)';
         bobOn.style.background = 'green';
+     })
+     par1.addEventListener('click', function() {
+        par1.innerHTML = "The value of v is: " + a;
+        par2.innerHTML ="His" + " " + "name" + " " + "is" + " " + "John" + " " + "Doe.";
+        window.alert(9+6);
+
      })
     </script>
 </body>
