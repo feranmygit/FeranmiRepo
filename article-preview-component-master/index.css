@@ -135,90 +135,96 @@ body{
     display: block;
 }
 
-@media only screen and (max-width: 1440px){
-    .wrapper-contaniner {
-        flex-direction: row;
-        width: 60%;
+/* sm range */
+ @media only screen and (min-width: 576px){
+
+      .wrapper-contaniner {
+        width: 90%;
+        display: flex;
+        justify-content: center;
     }
-    .image-block > img {
+     .image-block > img {
         max-width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
+        border-radius: 10px 0 0 10px;
     }
-    .bottom-share{
-        width: 30%;
-        right: -100px;
+     .bottom-share{
+        width: 48%;
+        right: -1.8rem;
         border-radius: 10px;
         position: absolute;
-        bottom: 120px;
+        bottom: 5rem;
     }
-}
-@media only screen and (min-width: 1440px){
-    .wrapper-contaniner {
-        flex-direction: row;
-        width: 60%;
+    .wrapper-one{
+        max-width: 50%;
     }
-    .bottom-share{
-        width: 50%;
-        right: -100px;
-        bottom: 220px;
-    }
-}
-
-
-
-@media only screen and (min-width: 623px){
-    .wrapper-contaniner {
-        flex-direction: row;
-        width: 90%;
-    }
-    .bottom-share{
-        width: 40%;
-        right: -20px;
-        bottom: 110px;
-    }
- 
-}
- @media only screen and (max-width: 623px){
-    .wrapper-contaniner {
-        flex-direction: column;
-        width: 90%;
-        
-    }
-    .image-block > img {
-        max-width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-    }
-    .bottom-share{
-        height: 5rem;
-        width: 100%;
-        right: 0px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 0px;
+    .wrapper-two {
         position: absolute;
-        bottom: 0;
+        right: 0;
+        width: 43%;
     }
-}
-
-
-@media only screen and (max-width: 908px){
-    .wrapper-contaniner {
-        width: 90%;
+    .wrapper-section-one > .text-block {
+        font-size: clamp(0.8rem, 2vw, 4.5rem);
     }
-}
-
-@media only screen and (min-width: 998px){
-    .wrapper-contaniner {
-        width: 60%;
+    .para-block {
+        font-size: clamp(0.5rem, 2vw, 3rem);
     }
+    .wrapper-section-two {
+        margin-block-start: 1rem;
+    }
+ }
+ @media only screen and (min-width: 650px){
     .bottom-share{
+        bottom: 6rem;
+        width: 45%;
+        right: -1.8rem;
+    }
+ }
+ @media only screen and (min-width: 768px){
+    .bottom-share{
+        bottom: 6.5rem;
         width: 40%;
-        right: -80px;
-        bottom: 120px;
+        right: -1.8rem;
+    }
+ }
+ @media only screen and (min-width: 852px){
+    .bottom-share{
+        bottom: 7rem;
+        width: 38%;
+        right: -1.8rem;
     }
 }
+ @media only screen and (min-width: 992px){
+    .bottom-share{
+        bottom: 7.5rem;
+        width: 35%;
+        right: -1.8rem;
+    }
+ }
+ @media only screen and (min-width: 1040px){
+    .bottom-share{
+        bottom: 8rem;
+        width: 30%;
+        right: -1.8rem;
+    }
+ }
+ @media only screen and (min-width: 1200px){
+    .bottom-share{
+        bottom: 8.5rem;
+        width: 25%;
+        right: -2rem;
+    }
+ }
+ @media only screen and (min-width: 1300px){
+    .bottom-share{
+        bottom: 9rem;
+        width: 23%;
+        right: -2rem;
+    }
+ }
+ @media only screen and (min-width: 1400px){
+    .bottom-share{
+        bottom: 10rem;
+        width: 20%;
+        right: -2rem;
+    }
+ }
