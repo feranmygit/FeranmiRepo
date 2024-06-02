@@ -345,7 +345,9 @@
 // document.getElementById("num2").innerHTML = Boolean(4>1);
 // document.getElementById("num").innerHTML = 4>5;
 
-// #JavaScript Comparison and Logical Operators
+
+
+
 
 // #JavaScript Comparison and Logical Operators
 // let num = 15;
@@ -379,17 +381,18 @@
 // let my_name = document.getElementById('num').innerHTML = b
 // // alert(b);
 
-// function myFunction() {
-//     let voteable;
-//     let age = Number(document.getElementById("age").value);
-//     if (isNaN(age)) {
-//       voteable = "Input is not a number";
-//     } else {
-//       voteable = (age < 18) ? "Too young" : "Old enough";
-//     }
-//     document.getElementById("num").innerHTML = voteable + " to vote";
+function myFunction() {
+    let voteable;
+    let age = Number(document.getElementById("age").value);
+    if (isNaN(age)) {
+      voteable = "Input is not a number";
+    } else {
+      voteable = (age < 18) ? "Too young" : "Old enough";
+    }
+    document.getElementById("num").innerHTML = voteable + " to vote";
    
-//   }
+  }
+
 
 // #JavaScript if, else, and else if
 const age = 25;
