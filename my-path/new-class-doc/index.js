@@ -3,50 +3,6 @@
 // console.log(greeting);
 // window.alert(greeting);
 
-// #JavaScript Comparison and Logical Operators
-// let num = 15;
-// num += 5;
-// window.alert(num);
-
-
-// let xr = prompt('what is your name');
-// const my_name = document.getElementById('num').innerHTML = xr
-
-// let first_num = 20;
-// let second_num = '20';
-// alert(first_num==second_num);
-
-// let first_num1 = 15;
-// let second_num2 = 15;
-// alert(first_num1===second_num2);
-
-
-
-// #Conditional (Ternary) Operator
-// let ant = true;
-// let boy = 7;
-// let cat = 5;
-// let dog = boy >7 ? ant : cat == 5;
-
-// alert(dog);
-
-// let a = 5;
-// let b = a >4 ? 'sign-in successful' : 'sign-in failed';
-// let my_name = document.getElementById('num').innerHTML = b
-// // alert(b);
-
-// function myFunction() {
-//     let voteable;
-//     let age = Number(document.getElementById("age").value);
-//     if (isNaN(age)) {
-//       voteable = "Input is not a number";
-//     } else {
-//       voteable = (age < 18) ? "Too young" : "Old enough";
-//     }
-//     document.getElementById("num").innerHTML = voteable + " to vote";
-   
-//   }
-
 // let x =100;
 // x &= 5;
 
@@ -391,6 +347,49 @@
 
 // #JavaScript Comparison and Logical Operators
 
+// #JavaScript Comparison and Logical Operators
+// let num = 15;
+// num += 5;
+// window.alert(num);
+
+
+// let xr = prompt('what is your name');
+// const my_name = document.getElementById('num').innerHTML = xr
+
+// let first_num = 20;
+// let second_num = '20';
+// alert(first_num==second_num);
+
+// let first_num1 = 15;
+// let second_num2 = 15;
+// alert(first_num1===second_num2);
+
+
+
+// #Conditional (Ternary) Operator
+// let ant = true;
+// let boy = 7;
+// let cat = 5;
+// let dog = boy >7 ? ant : cat == 5;
+
+// alert(dog);
+
+// let a = 5;
+// let b = a >4 ? 'sign-in successful' : 'sign-in failed';
+// let my_name = document.getElementById('num').innerHTML = b
+// // alert(b);
+
+// function myFunction() {
+//     let voteable;
+//     let age = Number(document.getElementById("age").value);
+//     if (isNaN(age)) {
+//       voteable = "Input is not a number";
+//     } else {
+//       voteable = (age < 18) ? "Too young" : "Old enough";
+//     }
+//     document.getElementById("num").innerHTML = voteable + " to vote";
+   
+//   }
 
 // #JavaScript if, else, and else if
 const age = 25;
