@@ -18,7 +18,7 @@ The challenge is to build out this multi-page space tourism website and ensure o
 #### [1.2] displaying javascript Objects in a loop method
 #### [1.3] displaying javascript Objects using Object.values() method
 
-#### [Date] 28.05.2024.
+### [Date] 28.05.2024.
 #### [1.4] displaying javascript Objects using JSON.Signify() method
 #### [1.5] Object Constructor Functions
 

@@ -37,7 +37,7 @@ They work as a conditional statements which are essential for decision-making in
  2. Executes code if the previous conditions are false and the current condition is true
  3. Can be chained multiple times 
 
- ### [2.3] else if Statement
+ ### [2.3] else Statement
  1. Syntax: if (condition){code to execute}
  2. Executes code if the previous conditions are false
 

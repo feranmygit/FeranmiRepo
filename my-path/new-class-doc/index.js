@@ -404,3 +404,4 @@ if (age < 18){
     vote = "old enough";
 }
 document.getElementById('num3').innerHTML =vote;
+z
