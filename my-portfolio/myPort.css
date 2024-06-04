@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+
+    --primary_color: rgb(24, 24, 24);
+    --primary_text_color: #fff;
+    --paragraph_text_color: hsl(228, 12%, 75%);
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--primary_color);
+    font-family: "Inter", sans-serif;
+    margin-inline: 1rem;
+}
+.text_align{
+    text-align: center;
+}
+.text_white{
+    color: var(--primary_text_color);
+}
+.margin_bottom{
+    margin-bottom: 0;
+}
+.flex{
+    display: flex;
+}
+.flex_row{
+    flex-direction: row;
+}
+.justify_centre{
+    justify-content: center;
+}
+.gap{
+    gap: 1rem;
+}
+.textPar_color{
+    color: var(--paragraph_text_color);
+}
+
+
+
+@media only screen and (min-width:578px) {
+    body{
+        margin-inline: 4rem;
+    }
+}

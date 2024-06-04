@@ -147,15 +147,29 @@
 
 // #Object Constructor Functions
 
-// function Person(first, last, age, phone){
-//     this.firstName = first;
-//     this.lastName = last;
-//     this.age = age;
-//     this.phoneNo = phone;
-// };
-// const myFather = new Person("John", "Mary", "50", "09012346744");
+function HumanDetails(first, last, age, phone){
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.phoneNo = phone;
+};
+const myFather = new HumanDetails("John", "Mary", "50yrs", "09012346744");
+document.getElementById('num3').innerHTML = typeof myFather.firstName;
 
-// document.getElementById('num3').innerHTML = "My name is" + " " + myFather.firstName + " " + myFather.lastName + " " + "and my age is" + " " + myFather.age + " " + "and my phone number is" + " " + myFather.phoneNo + ".";
+document.getElementById('num').innerHTML = "My name is" + " " + myFather.firstName + " " + myFather.lastName + " " + "and my age is" + " " + myFather.age + " " + "and my phone number is" + " " + myFather.phoneNo + ".";
+
+// #Object Literals
+
+const fruitTypes = {
+        Bannana: "200",
+        Apple: 400,
+        Cashew: "700",
+        Guava: "450",
+};
+document.getElementById('num2').innerHTML = typeof fruitTypes.Apple;
+
+
+
 
 
 // ##javascript strings
@@ -381,27 +395,26 @@
 // let my_name = document.getElementById('num').innerHTML = b
 // // alert(b);
 
-function myFunction() {
-    let voteable;
-    let age = Number(document.getElementById("age").value);
-    if (isNaN(age)) {
-      voteable = "Input is not a number";
-    } else {
-      voteable = (age < 18) ? "Too young" : "Old enough";
-    }
-    document.getElementById("num").innerHTML = voteable + " to vote";
+// function myFunction() {
+//     let voteable;
+//     let age = Number(document.getElementById("age").value);
+//     if (isNaN(age)) {
+//       voteable = "Input is not a number";
+//     } else {
+//       voteable = (age < 18) ? "Too young" : "Old enough";
+//     }
+//     document.getElementById("num").innerHTML = voteable + " to vote";
    
-  }
+//   }
 
 
 // #JavaScript if, else, and else if
-const age = 25;
-if (age < 18){
-    vote = "you are too young to vote";
-}else if (age < 23) {
-    vote = "you are okay to vote";
-} else {
-    vote = "old enough";
-}
-document.getElementById('num3').innerHTML =vote;
-z
+// const age = 25;
+// if (age < 18){
+//     vote = "you are too young to vote";
+// }else if (age < 23) {
+//     vote = "you are okay to vote";
+// } else {
+//     vote = "old enough";
+// }
+// document.getElementById('num3').innerHTML =vote;
